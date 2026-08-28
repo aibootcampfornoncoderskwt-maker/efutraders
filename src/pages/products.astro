@@ -91,9 +91,7 @@ const itemListSchema = {
   <section class="products-hero">
     <div class="container products-hero-grid">
       <div class="products-hero-copy">
-        <div class="breadcrumbs">
-          <a href="/">Home</a> / Products
-        </div>
+        <nav aria-label="Breadcrumb"><ol class="breadcrumbs"><li><a href="/">Home</a></li><li aria-current="page">Products</li></ol></nav>
         <span class="eyebrow">PRODUCT SUPPLY</span>
         <h1>Technology products for complete project delivery.</h1>
         <p>Source networking, fibre, CCTV, voice and IT products—or combine product supply with professional installation, configuration and support.</p>
@@ -143,9 +141,19 @@ const itemListSchema = {
         <p>Share the required products, preferred brands, specifications, quantities and destination. EFU will review the available supply options for your project.</p>
         <p class="form-note">Attachment upload is not yet available on the quotation form. Please describe your product list or BOQ in the enquiry details, or send the file directly over WhatsApp.</p>
       </div>
-      <div class="products-boq-actions">
-        <a class="btn btn-white" href="/contact?service=Product%20Supply#quote">Send Your Product List</a>
-        <a class="btn btn-outline" href={`https://wa.me/${company.countries.kw.whatsapp}?text=${encodeURIComponent('Hello EFU, I would like to send a product list / BOQ for a project quotation.')}`} target="_blank" rel="noopener noreferrer">WhatsApp EFU</a>
+      <div class="boq-location-switch" role="group" aria-label="Choose project location">
+        <input type="radio" name="boq-location" id="boq-kw" class="sr-only" checked />
+        <label for="boq-kw"><strong>Kuwait</strong><small>Primary service coverage</small></label>
+        <input type="radio" name="boq-location" id="boq-ae" class="sr-only" />
+        <label for="boq-ae"><strong>UAE</strong><small>Regional project support</small></label>
+        <div class="products-boq-actions" data-location="kw">
+          <a class="btn btn-white" href="/contact?service=Product%20Supply&country=Kuwait#quote">Send Your Product List</a>
+          <a class="btn btn-outline" href={`https://wa.me/${company.countries.kw.whatsapp}?text=${encodeURIComponent('Hello EFU, I would like to send a product list / BOQ for a project quotation.')}`} target="_blank" rel="noopener noreferrer">WhatsApp EFU Kuwait</a>
+        </div>
+        <div class="products-boq-actions" data-location="ae">
+          <a class="btn btn-white" href="/contact?service=Product%20Supply&country=United%20Arab%20Emirates#quote">Send Your Product List</a>
+          <a class="btn btn-outline" href={`https://wa.me/${company.countries.ae.whatsapp}?text=${encodeURIComponent('Hello EFU, I would like to send a product list / BOQ for a project quotation.')}`} target="_blank" rel="noopener noreferrer">WhatsApp EFU UAE</a>
+        </div>
       </div>
     </div>
   </section>
@@ -155,7 +163,10 @@ const itemListSchema = {
   .products-hero{background:var(--navy);color:#fff;overflow:hidden;padding:3.5rem 0}
   .products-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:center;gap:4vw}
   .products-hero-copy{min-width:0}
-  .products-hero-copy .breadcrumbs{color:#89a3b5;margin-bottom:1.6rem}
+  .products-hero-copy .breadcrumbs{display:flex;align-items:center;gap:.55rem;list-style:none;color:#a9becc;margin:0 0 1.6rem;padding:0;font-size:.72rem}
+  .products-hero-copy .breadcrumbs li+li::before{content:'/';margin-right:.55rem;color:#668397}
+  .products-hero-copy .breadcrumbs a:hover{color:#fff}
+  .products-hero-copy .breadcrumbs a:focus-visible{outline:2px solid #7dd2ec;outline-offset:3px;border-radius:2px}
   .products-hero-copy .eyebrow{color:#7dd2ec}
   .products-hero-copy h1{color:#fff;font-size:clamp(2.3rem,3.6vw,3.5rem);line-height:1.05;max-width:600px}
   .products-hero-copy>p{color:#c8d7e2;font-size:1.05rem;max-width:520px;margin-top:1.3rem}
@@ -164,8 +175,10 @@ const itemListSchema = {
   .btn-glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px)}
   .products-hero-points{display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;margin-top:1.6rem;color:#dce9f1;font-size:.78rem;font-weight:700;min-width:0}
   .products-hero-points span::before{content:'✓';margin-right:.42rem;color:var(--blue)}
-  .products-hero-media{position:relative;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4);aspect-ratio:3/2;min-width:0}
-  .products-hero-media img{width:100%;height:100%;object-fit:cover}
+  .products-hero-media{position:relative;border:1px solid rgba(125,210,236,.18);border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4);aspect-ratio:3/2;min-width:0}
+  .products-hero-media::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(7,157,216,.08),transparent 45%,rgba(245,154,35,.06));pointer-events:none}
+  .products-hero-media img{width:100%;height:100%;object-fit:cover;animation:productHeroReveal .8s cubic-bezier(.16,1,.3,1) both}
+  @keyframes productHeroReveal{from{opacity:0;transform:scale(1.025)}to{opacity:1;transform:scale(1)}}
   @media(max-width:980px){
     .products-hero-grid{grid-template-columns:minmax(0,1fr);gap:2.2rem}
     .products-hero-copy h1{max-width:none}
@@ -204,11 +217,21 @@ const itemListSchema = {
   .products-boq-inner h2{color:#fff;max-width:560px}
   .products-boq-inner>div:first-child p{color:#d7edf5;margin-top:1.1rem;max-width:520px}
   .products-boq-inner .form-note{color:#bfe0ee;margin-top:1rem;max-width:480px}
-  .products-boq-actions{display:flex;flex-direction:column;gap:.7rem;white-space:nowrap}
+  .boq-location-switch{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;min-width:min(100%,390px);padding:1rem;border:1px solid rgba(255,255,255,.22);border-radius:18px;background:rgba(5,18,29,.22)}
+  .boq-location-switch>label{display:flex;flex-direction:column;padding:.75rem .85rem;border:1px solid rgba(255,255,255,.25);border-radius:11px;cursor:pointer;transition:background-color .25s ease,border-color .25s ease,color .25s ease}
+  .boq-location-switch>label strong{font:800 .82rem 'Plus Jakarta Sans',Manrope,sans-serif}
+  .boq-location-switch>label small{color:#c7dceb;font-size:.68rem}
+  .boq-location-switch>input:checked+label{background:#fff;border-color:#fff;color:var(--navy)}
+  .boq-location-switch>input:checked+label small{color:var(--muted)}
+  .boq-location-switch>input:focus-visible+label{outline:2px solid #fff;outline-offset:2px}
+  .products-boq-actions{display:none;grid-column:1/-1;flex-direction:column;gap:.7rem;white-space:nowrap}
+  #boq-kw:checked~.products-boq-actions[data-location="kw"],#boq-ae:checked~.products-boq-actions[data-location="ae"]{display:flex}
   .btn-outline{background:transparent;border-color:rgba(255,255,255,.55);color:#fff}
   @media(max-width:980px){
     .products-boq-inner{flex-direction:column;align-items:flex-start;padding:2.5rem}
-    .products-boq-actions{width:100%}
+    .boq-location-switch,.products-boq-actions{width:100%}
     .products-boq-actions .btn{width:100%}
   }
+  @media(max-width:430px){.products-boq-inner{padding:1.5rem}.boq-location-switch{grid-template-columns:1fr;padding:.8rem}.boq-location-switch>label,.products-boq-actions{grid-column:1}.products-boq-actions{white-space:normal}}
+  @media(prefers-reduced-motion:reduce){.products-hero-media img{animation:none}}
 </style>

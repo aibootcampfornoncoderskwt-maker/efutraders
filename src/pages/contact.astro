@@ -1,6 +1,154 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'; import { company, services, breadcrumbList } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { company, services, products, breadcrumbList } from '../data/site';
+
 const breadcrumbSchema = breadcrumbList([{name:'Home',url:'/'},{name:'Contact',url:'/contact'}], Astro.site);
 ---
-<BaseLayout title="Contact & Request a Quote" description="Contact EFU Goods Traders for networking, cabling, CCTV, PBX, products, installation and trading enquiries." structuredData={[breadcrumbSchema]}><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / Contact</div><span class="eyebrow">CONTACT EFU</span><h1>Tell us what your project needs.</h1><p>Share your location, property type and requirements. The appropriate EFU team can then discuss the next step and prepare a quotation.</p></div></section><section class="section" id="quote"><div class="container content-grid"><div><span class="eyebrow">REQUEST A QUOTE</span><h2 style="margin-bottom:2rem">Project enquiry</h2><p id="selected-category" class="form-note" hidden style="margin-bottom:1.2rem;padding:.75rem 1rem;border-radius:9px;background:var(--bg);border:1px solid var(--line);color:var(--ink);font-weight:700">Requesting a quote for: <strong></strong></p><form class="quote-form" id="quote-form"><label style="display:none">Leave this empty<input name="website" tabindex="-1" autocomplete="off"/></label><label>Full name *<input name="name" autocomplete="name" required/></label><label>Company<input name="company" autocomplete="organization"/></label><label>Phone / WhatsApp *<input name="phone" autocomplete="tel" required/></label><label>Email *<input name="email" type="email" autocomplete="email" required/></label><label>Country *<select name="country" required><option value="">Select country</option><option>Kuwait</option><option>United Arab Emirates</option><option>India</option></select></label><label>Required service *<select name="service" required><option value="">Select service</option>{services.map(s=><option>{s.title}</option>)}<option>Product Supply</option><option>Trading & Supply</option><option>Other</option></select></label><label class="full">Project details *<textarea name="message" maxlength="5000" required placeholder="Property type, area, current issue, required products or expected project scope"></textarea></label><label class="full" style="display:flex;grid-template-columns:auto 1fr;align-items:start"><input type="checkbox" required style="width:auto;margin-top:.3rem"/>I agree that EFU may contact me regarding this enquiry.</label><button class="btn full" type="submit">Send Enquiry</button><p class="form-note full" id="form-status" role="status">Do not include passwords, private access credentials or other sensitive information.</p></form></div><aside class="side-card"><span class="eyebrow">DIRECT CONTACT</span><h3>Kuwait</h3><p>{company.countries.kw.phone}</p><a class="text-link" href={`https://wa.me/${company.countries.kw.whatsapp}`} target="_blank" rel="noopener noreferrer">WhatsApp Kuwait →</a><h3 style="margin-top:2rem">UAE</h3><p><a href={`tel:${company.countries.ae.tel}`}>{company.countries.ae.phone}</a></p><a class="text-link" href={`https://wa.me/${company.countries.ae.whatsapp}`} target="_blank" rel="noopener noreferrer">WhatsApp UAE →</a><h3 style="margin-top:2rem">India</h3><p>{company.countries.in.phone}</p><h3 style="margin-top:2rem">Email</h3><a class="text-link" href={`mailto:${company.email}`}>{company.email}</a></aside></div></section><script>const params=new URLSearchParams(location.search);const serviceParam=params.get('service');const productParam=params.get('product');const serviceSelect=document.querySelector<HTMLSelectElement>('select[name="service"]');const messageField=document.querySelector<HTMLTextAreaElement>('textarea[name="message"]');const notice=document.querySelector<HTMLElement>('#selected-category');const selectByText=(value:string)=>{if(!serviceSelect)return false;const match=[...serviceSelect.options].find(o=>o.value.toLowerCase()===value.toLowerCase());if(match){serviceSelect.value=match.value;return true}return false};if(productParam){selectByText('Product Supply');if(messageField&&!messageField.value)messageField.value=`Product category: ${productParam}\n\n`;if(notice){notice.hidden=false;const strong=notice.querySelector('strong');if(strong)strong.textContent=productParam}}else if(serviceParam){selectByText(serviceParam)}
-const form=document.querySelector<HTMLFormElement>('#quote-form');form?.addEventListener('submit',async(e)=>{e.preventDefault();const button=form.querySelector<HTMLButtonElement>('button')!;const status=document.querySelector<HTMLElement>('#form-status')!;button.disabled=true;button.textContent='Sending…';status.textContent='Sending your enquiry…';try{const data=Object.fromEntries(new FormData(form).entries());const response=await fetch('/api/quote',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});const result=await response.json();if(!response.ok)throw new Error(result.error||'Unable to send enquiry.');location.href='/thank-you'}catch(error){status.textContent=error instanceof Error?error.message:'Unable to send enquiry. Please contact EFU directly.';button.disabled=false;button.textContent='Send Enquiry'}});</script></BaseLayout>
+
+<BaseLayout
+  title="Contact & Request a Quote"
+  description="Contact EFU Goods Traders for networking, cabling, CCTV, PBX, products, installation and trading enquiries."
+  structuredData={[breadcrumbSchema]}
+>
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumbs"><a href="/">Home</a> / Contact</div>
+      <span class="eyebrow">CONTACT EFU</span>
+      <h1>Tell us what your project needs.</h1>
+      <p>Share your location, property type and requirements. The appropriate EFU team can then discuss the next step and prepare a quotation.</p>
+    </div>
+  </section>
+
+  <section class="section" id="quote">
+    <div class="container content-grid">
+      <div>
+        <span class="eyebrow">REQUEST A QUOTE</span>
+        <h2 style="margin-bottom:2rem">Project enquiry</h2>
+        <p id="selected-category" class="selected-category form-note" aria-live="polite" hidden>Requesting a quote for: <strong></strong></p>
+        <form class="quote-form" id="quote-form">
+          <label style="display:none">Leave this empty<input name="website" tabindex="-1" autocomplete="off" /></label>
+          <label>Full name *<input name="name" autocomplete="name" required /></label>
+          <label>Company<input name="company" autocomplete="organization" /></label>
+          <label>Phone / WhatsApp *<input name="phone" autocomplete="tel" required /></label>
+          <label>Email *<input name="email" type="email" autocomplete="email" required /></label>
+          <label>Country *
+            <select name="country" required>
+              <option value="">Select country</option>
+              <option>Kuwait</option>
+              <option>United Arab Emirates</option>
+              <option>India</option>
+            </select>
+          </label>
+          <label>Required service *
+            <select name="service" required>
+              <option value="">Select service</option>
+              {services.map(s => <option>{s.title}</option>)}
+              <option>Product Supply</option>
+              <option>Trading & Supply</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label class="full product-category-field" id="product-category-field" hidden>Product category
+            <select name="product">
+              <option value="">Complete product list / BOQ or multiple categories</option>
+              {products.map(product => <option value={product}>{product}</option>)}
+            </select>
+          </label>
+          <label class="full">Project details *<textarea name="message" maxlength="5000" required placeholder="Property type, area, current issue, required products or expected project scope"></textarea></label>
+          <label class="full consent"><input type="checkbox" required />I agree that EFU may contact me regarding this enquiry.</label>
+          <button class="btn full" type="submit">Send Enquiry</button>
+          <p class="form-note full" id="form-status" role="status">Do not include passwords, private access credentials or other sensitive information.</p>
+        </form>
+      </div>
+      <aside class="side-card">
+        <span class="eyebrow">DIRECT CONTACT</span>
+        <h3>Kuwait</h3>
+        <p>{company.countries.kw.phone}</p>
+        <a class="text-link" href={`https://wa.me/${company.countries.kw.whatsapp}`} target="_blank" rel="noopener noreferrer">WhatsApp Kuwait →</a>
+        <h3 style="margin-top:2rem">UAE</h3>
+        <p><a href={`tel:${company.countries.ae.tel}`}>{company.countries.ae.phone}</a></p>
+        <a class="text-link" href={`https://wa.me/${company.countries.ae.whatsapp}`} target="_blank" rel="noopener noreferrer">WhatsApp UAE →</a>
+        <h3 style="margin-top:2rem">India</h3>
+        <p>{company.countries.in.phone}</p>
+        <h3 style="margin-top:2rem">Email</h3>
+        <a class="text-link" href={`mailto:${company.email}`}>{company.email}</a>
+      </aside>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    const serviceParam = params.get('service');
+    const productParam = params.get('product');
+    const countryParam = params.get('country');
+    const serviceSelect = document.querySelector<HTMLSelectElement>('select[name="service"]');
+    const productSelect = document.querySelector<HTMLSelectElement>('select[name="product"]');
+    const countrySelect = document.querySelector<HTMLSelectElement>('select[name="country"]');
+    const productField = document.querySelector<HTMLElement>('#product-category-field');
+    const notice = document.querySelector<HTMLElement>('#selected-category');
+
+    const selectByText = (select: HTMLSelectElement | null, value: string) => {
+      if (!select) return false;
+      const match = [...select.options].find(option => option.value.toLowerCase() === value.toLowerCase());
+      if (!match) return false;
+      select.value = match.value;
+      return true;
+    };
+    const showSelectedProduct = () => {
+      if (!notice || !productSelect) return;
+      const selected = productSelect.value;
+      notice.hidden = !selected;
+      const strong = notice.querySelector('strong');
+      if (strong) strong.textContent = selected;
+    };
+    const syncProductField = () => {
+      if (!productField || !serviceSelect) return;
+      productField.hidden = serviceSelect.value !== 'Product Supply';
+      if (productField.hidden && notice) notice.hidden = true;
+      if (!productField.hidden) showSelectedProduct();
+    };
+
+    if (countryParam) selectByText(countrySelect, countryParam);
+    if (productParam) {
+      selectByText(serviceSelect, 'Product Supply');
+      selectByText(productSelect, productParam);
+    } else if (serviceParam) {
+      selectByText(serviceSelect, serviceParam);
+    }
+    syncProductField();
+    serviceSelect?.addEventListener('change', syncProductField);
+    productSelect?.addEventListener('change', showSelectedProduct);
+
+    const form = document.querySelector<HTMLFormElement>('#quote-form');
+    form?.addEventListener('submit', async event => {
+      event.preventDefault();
+      const button = form.querySelector<HTMLButtonElement>('button')!;
+      const status = document.querySelector<HTMLElement>('#form-status')!;
+      button.disabled = true;
+      button.textContent = 'Sending…';
+      status.textContent = 'Sending your enquiry…';
+      try {
+        const data = Object.fromEntries(new FormData(form).entries());
+        const response = await fetch('/api/quote', {
+          method: 'POST',
+          headers: {'Content-Type':'application/json'},
+          body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'Unable to send enquiry.');
+        location.href = '/thank-you';
+      } catch (error) {
+        status.textContent = error instanceof Error ? error.message : 'Unable to send enquiry. Please contact EFU directly.';
+        button.disabled = false;
+        button.textContent = 'Send Enquiry';
+      }
+    });
+  </script>
+</BaseLayout>
+
+<style>
+  .selected-category{margin-bottom:1.2rem;padding:.75rem 1rem;border-radius:9px;background:#eaf6fb;border:1px solid #cce6f1;color:var(--ink);font-weight:700}
+  .product-category-field[hidden]{display:none}
+  .consent{display:flex;grid-template-columns:auto 1fr;align-items:start}
+  .consent input{width:auto;margin-top:.3rem}
+</style>
