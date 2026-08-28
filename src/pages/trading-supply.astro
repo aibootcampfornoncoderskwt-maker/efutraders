@@ -1,4 +1,79 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'; import { trading } from '../data/site';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import TradingCard from '../components/TradingCard.astro';
+import { breadcrumbList } from '../data/site';
+
+const categories = [
+  {
+    title: 'Civil & Construction Materials',
+    description: 'Commercial sourcing and supply of construction materials based on project specifications, quantities and delivery requirements.',
+    image: '/images/trading/civil-construction-materials.webp',
+    alt: 'Organised steel sections, pipes and palletised construction materials in a commercial supply yard'
+  },
+  {
+    title: 'Agricultural Products',
+    description: 'Agricultural products sourced for wholesale and commercial requirements across EFU’s operating markets.',
+    image: '/images/trading/agricultural-products.webp',
+    alt: 'Bulk agricultural produce arranged in crates beside a commercial farm packing facility'
+  },
+  {
+    title: 'Coconut Products',
+    description: 'Fresh, dry and processed coconut products available according to product specification, quantity and destination.',
+    image: '/images/trading/coconut-products.webp',
+    alt: 'Whole coconuts, dried coconut pieces and processed coconut prepared for wholesale supply'
+  },
+  {
+    title: 'Spices, Fruits & Vegetables',
+    description: 'Wholesale sourcing of spices and fresh produce based on seasonal availability and delivery requirements.',
+    image: '/images/trading/spices-fruits-vegetables.webp',
+    alt: 'Wholesale spices, fruits and vegetables organised in sacks and produce crates'
+  },
+  {
+    title: 'Mechanical Equipment & Components',
+    description: 'Commercial sourcing of mechanical equipment, components, fittings and related industrial requirements.',
+    image: '/images/trading/mechanical-components.webp',
+    alt: 'Industrial valves, bearings, flanges and mechanical components on an organised inspection bench'
+  },
+  {
+    title: 'General Sourcing & Supply',
+    description: 'Flexible international sourcing support for products that fall outside EFU’s standard technology and trading categories.',
+    image: '/images/trading/general-sourcing.webp',
+    alt: 'Warehouse team preparing organised pallets and commercial inventory for international supply'
+  }
+];
+
+const breadcrumbSchema = breadcrumbList([{name:'Home',url:'/'},{name:'Trading & Supply',url:'/trading-supply'}], Astro.site);
 ---
-<BaseLayout title="International Trading & Supply" description="Construction materials, agricultural products, coconut products, spices, mechanical components and general sourcing across EFU markets."><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / Trading & Supply</div><span class="eyebrow">BEYOND TECHNOLOGY</span><h1>International trading and dependable sourcing.</h1><p>EFU supports commercial supply requirements across general goods, agricultural products, construction materials and mechanical components.</p></div></section><section class="section"><div class="container industry-grid">{trading.map((x,i)=><article><b>{String(i+1).padStart(2,'0')}</b><h2 style="font-size:1.35rem;margin-top:3rem">{x}</h2><p>Share specifications, quantity, destination and delivery requirements to discuss sourcing and availability.</p></article>)}</div></section></BaseLayout>
+
+<BaseLayout title="International Trading & Supply" description="Construction materials, agricultural products, coconut products, spices, mechanical components and general sourcing across EFU markets." structuredData={[breadcrumbSchema]}>
+  <section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / Trading & Supply</div><span class="eyebrow">BEYOND TECHNOLOGY</span><h1>International trading and dependable sourcing.</h1><p>EFU supports commercial supply requirements across general goods, agricultural products, construction materials and mechanical components.</p></div></section>
+  <section class="section trading-categories">
+    <div class="container">
+      <header class="trading-categories-head">
+        <div><span class="eyebrow">TRADING & SUPPLY</span><h2>Products sourced around your commercial requirements.</h2></div>
+        <div><p>Share your specifications, required quantity and destination. EFU will review the sourcing and supply options available for your requirement.</p><a class="btn btn-ghost" href="/contact#quote">Send Your Requirement</a></div>
+      </header>
+      <div class="trading-card-grid">
+        {categories.map((category, index) => <TradingCard number={String(index + 1).padStart(2, '0')} {...category} />)}
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .trading-categories{background:linear-gradient(180deg,#f8fbfd 0%,#fff 42%)}
+  .trading-categories-head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);align-items:end;gap:6vw;margin-bottom:3rem}
+  .trading-categories-head h2{max-width:760px}
+  .trading-categories-head>div:last-child{display:grid;justify-items:start;gap:1.25rem}
+  .trading-categories-head p{max-width:520px;font-size:.95rem}
+  .trading-card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:stretch;gap:1.25rem}
+  @media(max-width:980px){
+    .trading-categories-head{grid-template-columns:1fr;gap:1.25rem}
+    .trading-card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  }
+  @media(max-width:600px){
+    .trading-categories-head{margin-bottom:2rem}
+    .trading-card-grid{grid-template-columns:1fr;gap:1rem}
+    .trading-categories-head .btn{width:100%}
+  }
+</style>

@@ -30,6 +30,19 @@ export const products = ['Network switches & routers','Wireless access points','
 export const trading = ['Civil & construction materials','Agricultural products','Coconut products','Spices, fruits & vegetables','Mechanical equipment & components','General sourcing & supply'];
 export const industries = ['Corporate offices','Villas & residences','Retail & hospitality','Warehouses & industry','Education','Healthcare','Construction & contracting'];
 
+export function breadcrumbList(items: { name: string; url: string }[], site: string | URL | undefined) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: items.map((item, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: item.name,
+      item: new URL(item.url, site).toString()
+    }))
+  };
+}
+
 export const faq = [
   ['Do you provide both equipment and installation?','Yes. EFU can support product supply, installation, configuration and handover based on the requirements of each project.'],
   ['Can EFU conduct a site survey?','Yes. Contact the local team to arrange a survey and confirm its scope, availability and any applicable charges.'],

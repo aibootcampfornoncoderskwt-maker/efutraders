@@ -1,0 +1,80 @@
+---
+const scenes = [
+  { key:'technology', label:'Technology Solutions', eyebrow:'NETWORKING • SECURITY • COMMUNICATION', heading:'Infrastructure that keeps your business connected.', copy:'Professional Wi-Fi, structured cabling, CCTV, PBX and network security—from site assessment and design to installation and support across Kuwait and the UAE.', primary:['Request a Site Survey','/contact?service=Technology%20Solutions#quote'], secondary:['Explore Solutions','/solutions'], points:['Design & supply','Professional installation','Ongoing support'], statusLabel:'COMPLETE PROJECT DELIVERY', status:'Survey → Design → Install → Support', image:'/images/hero/technology-solutions.webp', imageSmall:'/images/hero/technology-solutions-960.webp', width:1586, height:992 },
+  { key:'products', label:'Products & Equipment', eyebrow:'NETWORKING • CCTV • VOICE • IT PRODUCTS', heading:'Technology products for complete project delivery.', copy:'Source networking, fibre, CCTV, PBX and IT products—or combine supply with professional installation and configuration.', primary:['Send Your Product List','/contact?service=Product%20Supply#quote'], secondary:['Explore Products','/products'], points:['Multi-brand options','Project-based supply','Installation available'], statusLabel:'PROJECT SUPPLY WORKFLOW', status:'Products → Configuration → Delivery', image:'/images/hero/products-equipment.webp', imageSmall:'/images/hero/products-equipment-960.webp', width:1536, height:1024 },
+  { key:'trading', label:'Trading & Supply', eyebrow:'SOURCING • TRADING • REGIONAL SUPPLY', heading:'International sourcing shaped around your requirements.', copy:'EFU supports commercial sourcing across construction materials, mechanical components, agricultural products and general supply requirements.', primary:['Send Your Requirement','/contact?service=Trading%20%26%20Supply#quote'], secondary:['Explore Trading & Supply','/trading-supply'], points:['Requirement-based sourcing','Kuwait, UAE and India','Commercial supply support'], statusLabel:'COMMERCIAL SOURCING', status:'Requirement → Sourcing → Supply', image:'/images/hero/trading-supply.webp', imageSmall:'/images/hero/trading-supply-960.webp', width:1536, height:1024 }
+];
+---
+
+<section class="hero-showcase" aria-roledescription="carousel" aria-label="EFU business areas" data-hero-showcase>
+  <div class="hero-scene-stack">
+    {scenes.map((scene,index) => <article class:list={['hero-scene',`hero-scene-${scene.key}`,{'is-active':index===0}]} id={`hero-scene-${index}`} role="tabpanel" aria-roledescription="slide" aria-labelledby={`hero-tab-${index}`} aria-hidden={index===0?'false':'true'} inert={index===0?undefined:true} data-hero-scene>
+      <div class="hero-scene-media" aria-hidden="true"><img src={scene.image} srcset={`${scene.imageSmall} 960w, ${scene.image} ${scene.width}w`} sizes="100vw" alt="" width={scene.width} height={scene.height} loading={index===0?'eager':'lazy'} fetchpriority={index===0?'high':'low'} decoding={index===0?'sync':'async'} /></div>
+      <div class="hero-scene-overlay" aria-hidden="true"></div>
+      <div class="container hero-scene-layout">
+        <div class="hero-scene-copy">
+          <span class="showcase-eyebrow">{scene.eyebrow}</span>
+          {index===0?<h1>{scene.heading}</h1>:<h2>{scene.heading}</h2>}
+          <p>{scene.copy}</p>
+          <div class="showcase-actions"><a class="btn" href={scene.primary[1]}>{scene.primary[0]}</a><a class="btn showcase-secondary" href={scene.secondary[1]}>{scene.secondary[0]}</a></div>
+          <div class="showcase-points">{scene.points.map(point=><span>{point}</span>)}</div>
+        </div>
+        <div class="showcase-status"><span class="status-pulse"></span><small>{scene.statusLabel}</small><strong>{scene.status}</strong></div>
+      </div>
+    </article>)}
+  </div>
+  <div class="container hero-showcase-controls" data-hero-controls>
+    <div class="hero-scene-tabs" role="tablist" aria-label="Choose a business area">
+      {scenes.map((scene,index)=><button class="hero-scene-tab" id={`hero-tab-${index}`} type="button" role="tab" aria-controls={`hero-scene-${index}`} aria-selected={index===0?'true':'false'} aria-current={index===0?'true':undefined} tabindex={index===0?'0':'-1'} data-hero-tab data-index={index}><span class="hero-tab-progress" aria-hidden="true"></span><span class="hero-tab-number">{String(index+1).padStart(2,'0')}</span><span>{scene.label}</span></button>)}
+    </div>
+    <div class="hero-transport"><button type="button" aria-label="Show previous hero scene" data-hero-previous><span aria-hidden="true">←</span></button><button type="button" aria-label="Pause automatic hero rotation" aria-pressed="false" data-hero-pause><span aria-hidden="true">Ⅱ</span></button><button type="button" aria-label="Show next hero scene" data-hero-next><span aria-hidden="true">→</span></button></div>
+  </div>
+  <p class="sr-only" aria-live="polite" aria-atomic="true" data-hero-announcement></p>
+</section>
+
+<script>
+  const hero=document.querySelector<HTMLElement>('[data-hero-showcase]');
+  if(hero){
+    const scenes=[...hero.querySelectorAll<HTMLElement>('[data-hero-scene]')];
+    const tabs=[...hero.querySelectorAll<HTMLButtonElement>('[data-hero-tab]')];
+    const controls=hero.querySelector<HTMLElement>('[data-hero-controls]');
+    const previous=hero.querySelector<HTMLButtonElement>('[data-hero-previous]');
+    const next=hero.querySelector<HTMLButtonElement>('[data-hero-next]');
+    const pause=hero.querySelector<HTMLButtonElement>('[data-hero-pause]');
+    const announcement=hero.querySelector<HTMLElement>('[data-hero-announcement]');
+    const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
+    const mobile=matchMedia('(max-width: 820px)');
+    const interval=7500;
+    let activeIndex=0,timer:number|undefined,remaining=interval,startedAt=0;
+    let hoverPaused=false,focusPaused=false,userPaused=false;
+    let autoplayStopped=reducedMotion.matches||mobile.matches;
+    const autoplayPaused=()=>hoverPaused||focusPaused||userPaused||document.hidden;
+    const clearTimer=()=>{if(timer===undefined)return;remaining=Math.max(100,remaining-(performance.now()-startedAt));window.clearTimeout(timer);timer=undefined};
+    const scheduleRotation=()=>{if(timer!==undefined||autoplayStopped||autoplayPaused())return;startedAt=performance.now();timer=window.setTimeout(()=>{timer=undefined;remaining=interval;activate((activeIndex+1)%scenes.length,false);scheduleRotation()},remaining)};
+    const syncPauseState=()=>{const isPaused=autoplayStopped||autoplayPaused();hero.classList.toggle('is-autoplay-paused',isPaused);isPaused?clearTimer():scheduleRotation()};
+    const stopAutoplay=(reason:'manual'|'disabled')=>{autoplayStopped=true;clearTimer();hero.classList.add('is-autoplay-stopped');if(pause){pause.disabled=true;pause.setAttribute('aria-pressed','true');pause.setAttribute('aria-label',reason==='manual'?'Automatic hero rotation stopped':'Automatic hero rotation disabled')}syncPauseState()};
+    const activate=(index:number,manual:boolean)=>{activeIndex=(index+scenes.length)%scenes.length;scenes.forEach((scene,i)=>{const active=i===activeIndex;scene.classList.toggle('is-active',active);scene.setAttribute('aria-hidden',String(!active));scene.inert=!active});tabs.forEach((tab,i)=>{const active=i===activeIndex;tab.setAttribute('aria-selected',String(active));tab.tabIndex=active?0:-1;active?tab.setAttribute('aria-current','true'):tab.removeAttribute('aria-current')});remaining=interval;if(manual){stopAutoplay('manual');if(announcement)announcement.textContent=`Scene ${activeIndex+1} of ${scenes.length}: ${tabs[activeIndex].textContent?.trim()}`}};
+    tabs.forEach((tab,index)=>tab.addEventListener('click',()=>activate(index,true)));
+    previous?.addEventListener('click',()=>activate(activeIndex-1,true));next?.addEventListener('click',()=>activate(activeIndex+1,true));
+    pause?.addEventListener('click',()=>{userPaused=!userPaused;pause.setAttribute('aria-pressed',String(userPaused));pause.setAttribute('aria-label',userPaused?'Resume automatic hero rotation':'Pause automatic hero rotation');syncPauseState()});
+    controls?.addEventListener('keydown',event=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(event.key))return;event.preventDefault();const index=event.key==='Home'?0:event.key==='End'?scenes.length-1:activeIndex+(event.key==='ArrowRight'?1:-1);activate(index,true);tabs[activeIndex].focus()});
+    hero.addEventListener('mouseenter',()=>{hoverPaused=true;syncPauseState()});hero.addEventListener('mouseleave',()=>{hoverPaused=false;syncPauseState()});
+    controls?.addEventListener('focusin',()=>{focusPaused=true;syncPauseState()});controls?.addEventListener('focusout',event=>{if(controls.contains(event.relatedTarget as Node|null))return;focusPaused=false;syncPauseState()});
+    document.addEventListener('visibilitychange',syncPauseState);reducedMotion.addEventListener('change',event=>{if(event.matches)stopAutoplay('disabled')});mobile.addEventListener('change',event=>{if(event.matches)stopAutoplay('disabled')});
+    autoplayStopped?stopAutoplay('disabled'):requestAnimationFrame(scheduleRotation);
+  }
+</script>
+
+<style>
+  .hero-showcase{position:relative;isolation:isolate;height:clamp(650px,76vh,780px);min-height:650px;overflow:hidden;background:#071522;color:#fff}.hero-scene-stack,.hero-scene,.hero-scene-media,.hero-scene-overlay{position:absolute;inset:0}.hero-scene{z-index:0;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .8s ease,visibility .8s ease}.hero-scene.is-active{z-index:1;opacity:1;visibility:visible;pointer-events:auto}.hero-scene-media{overflow:hidden;background:#071522}.hero-scene-media img{width:100%;height:100%;object-fit:cover;object-position:center;transform:scale(1.02);transition:transform 8s ease-out}.hero-scene.is-active .hero-scene-media img{transform:scale(1.06)}.hero-scene-overlay{background:linear-gradient(90deg,rgba(5,18,29,.98) 0%,rgba(6,25,40,.92) 43%,rgba(6,25,40,.45) 70%,rgba(6,25,40,.18) 100%),linear-gradient(0deg,rgba(5,18,29,.7),transparent 64%)}
+  .hero-scene-layout{position:relative;z-index:2;height:100%;display:flex;align-items:center;padding:4rem 0 11rem}.hero-scene-copy{width:min(760px,68%)}.showcase-eyebrow{display:block;margin-bottom:1.15rem;color:#75d2f0;font:800 .68rem 'Plus Jakarta Sans',Manrope,sans-serif;letter-spacing:.15em}.hero-scene h1,.hero-scene h2{max-width:780px;color:#fff;font:800 clamp(3rem,4.65vw,5rem)/1.04 'Plus Jakarta Sans',Manrope,sans-serif;letter-spacing:-.055em}.hero-scene-copy>p{max-width:680px;margin:1.35rem 0 1.5rem;color:#c8d7e2;font-size:1.06rem;line-height:1.7}.showcase-actions{display:flex;gap:.8rem}.showcase-secondary{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px)}.showcase-points{display:flex;flex-wrap:wrap;gap:.7rem 1.4rem;margin-top:1.4rem;color:#dce9f1;font-size:.76rem;font-weight:700}.showcase-points span::before{content:'✓';margin-right:.42rem;color:var(--blue)}
+  .showcase-status{position:absolute;right:0;bottom:155px;width:310px;padding:1.05rem 1.2rem;border:1px solid rgba(255,255,255,.2);border-radius:13px;background:rgba(5,18,29,.68);backdrop-filter:blur(14px);display:grid;grid-template-columns:12px 1fr;gap:.12rem .7rem}.showcase-status .status-pulse{grid-row:1/3}.showcase-status small{font-size:.56rem;letter-spacing:.14em;color:#7dd2ec}.showcase-status strong{font-size:.74rem}
+  .hero-showcase-controls{position:absolute;z-index:5;left:50%;bottom:28px;transform:translateX(-50%);display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:1.2rem;padding-right:72px}.hero-scene-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));max-width:860px}.hero-scene-tab{position:relative;min-height:62px;padding:1rem .8rem .55rem;border:0;border-top:1px solid rgba(255,255,255,.28);background:transparent;color:#9db2c0;text-align:left;font:700 .7rem 'Plus Jakarta Sans',Manrope,sans-serif;cursor:pointer;transition:color .25s ease,background .25s ease}.hero-scene-tab[aria-current="true"]{color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.07),transparent)}.hero-tab-number{display:block;margin-bottom:.25rem;color:var(--orange);font-size:.57rem;letter-spacing:.12em}.hero-tab-progress{position:absolute;top:-1px;left:0;width:100%;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:left}.hero-scene-tab[aria-current="true"] .hero-tab-progress{animation:heroSceneProgress 7.5s linear forwards}.hero-showcase.is-autoplay-paused .hero-tab-progress{animation-play-state:paused}.hero-showcase.is-autoplay-stopped .hero-scene-tab[aria-current="true"] .hero-tab-progress{animation:none;transform:scaleX(1)}
+  .hero-transport{display:flex;gap:.4rem;margin-right:2px}.hero-transport button{width:38px;height:38px;border:1px solid rgba(255,255,255,.28);border-radius:50%;background:rgba(5,18,29,.52);color:#fff;cursor:pointer;backdrop-filter:blur(10px)}.hero-transport button:disabled{cursor:default;opacity:.48}.hero-scene-tab:focus-visible,.hero-transport button:focus-visible{outline:2px solid var(--orange);outline-offset:3px}
+  .hero-scene .showcase-eyebrow,.hero-scene h1,.hero-scene h2,.hero-scene-copy>p,.hero-scene .showcase-actions,.hero-scene .showcase-points,.hero-scene .showcase-status{opacity:0;transform:translateY(12px);transition:opacity .38s ease,transform .38s ease}.hero-scene.is-active .showcase-eyebrow,.hero-scene.is-active h1,.hero-scene.is-active h2,.hero-scene.is-active .hero-scene-copy>p,.hero-scene.is-active .showcase-actions,.hero-scene.is-active .showcase-points,.hero-scene.is-active .showcase-status{opacity:1;transform:none}.hero-scene.is-active h1,.hero-scene.is-active h2{transition-delay:.08s}.hero-scene.is-active .hero-scene-copy>p{transition-delay:.15s}.hero-scene.is-active .showcase-actions,.hero-scene.is-active .showcase-points,.hero-scene.is-active .showcase-status{transition-delay:.22s}@keyframes heroSceneProgress{to{transform:scaleX(1)}}
+  @media(max-width:1050px){.hero-scene-copy{width:70%}.showcase-status{right:1rem;width:285px}}
+  @media(max-width:820px){.hero-showcase{height:880px;min-height:880px}.hero-scene-media img{object-position:62% center}.hero-scene-products .hero-scene-media img,.hero-scene-trading .hero-scene-media img{object-position:64% center}.hero-scene-overlay{background:linear-gradient(90deg,rgba(5,18,29,.97),rgba(6,25,40,.82)),linear-gradient(0deg,rgba(5,18,29,.9),rgba(5,18,29,.2) 75%)}.hero-scene-layout{align-items:flex-start;padding:3.3rem 0 17rem}.hero-scene-copy{width:100%}.hero-scene h1,.hero-scene h2{font-size:clamp(2.45rem,9vw,3.55rem);line-height:1.06}.hero-scene-copy>p{max-width:620px;font-size:.96rem;line-height:1.6}.showcase-status{right:16px;bottom:206px;left:16px;width:auto;padding:.8rem 1rem}.hero-showcase-controls{bottom:74px;display:block;padding-right:0}.hero-scene-tabs{display:flex;max-width:none;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;scroll-snap-type:x proximity}.hero-scene-tabs::-webkit-scrollbar{display:none}.hero-scene-tab{flex:0 0 185px;scroll-snap-align:start}.hero-transport{justify-content:flex-end;margin:10px 0 0}}
+  @media(max-width:560px){.showcase-eyebrow{font-size:.6rem;line-height:1.5}.hero-scene-copy>p{margin:1rem 0 1.15rem;font-size:.9rem}.showcase-actions{display:grid;gap:.55rem}.showcase-actions .btn{min-height:45px;padding:.72rem 1rem}.showcase-points{display:grid;gap:.28rem;margin-top:1rem}.hero-scene-tab{flex-basis:168px;min-height:56px;padding:.85rem .7rem .45rem}}
+  @media(max-width:380px){.hero-showcase{height:920px;min-height:920px}.hero-scene h1,.hero-scene h2{font-size:2.28rem}.hero-scene-layout{padding-top:2.7rem}}
+  @media(prefers-reduced-motion:reduce){.hero-scene,.hero-scene-media img,.hero-scene .showcase-eyebrow,.hero-scene h1,.hero-scene h2,.hero-scene-copy>p,.hero-scene .showcase-actions,.hero-scene .showcase-points,.hero-scene .showcase-status{transition:none}.hero-scene-media img,.hero-scene.is-active .hero-scene-media img{transform:scale(1.02)}.hero-tab-progress{animation:none!important}}
+</style>

@@ -1,0 +1,50 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  description: string;
+  image: string;
+  alt: string;
+}
+
+const { number, title, description, image, alt } = Astro.props;
+---
+
+<article class="trading-card">
+  <div class="trading-card-image">
+    <img src={image} alt={alt} width="1200" height="800" loading="lazy" decoding="async" />
+  </div>
+  <div class="trading-card-content">
+    <div class="trading-card-meta"><span>{number}</span><span>Trading & Supply</span></div>
+    <h3>{title}</h3>
+    <p>{description}</p>
+    <a href="/contact#quote"><span>Request a Quote</span><span class="trading-card-arrow" aria-hidden="true">→</span></a>
+  </div>
+</article>
+
+<style>
+  .trading-card{min-width:0;display:flex;flex-direction:column;overflow:hidden;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 24px rgba(11,31,51,.05);transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+  .trading-card-image{aspect-ratio:3/2;overflow:hidden;background:#dce7ed}
+  .trading-card-image img{width:100%;height:100%;object-fit:cover;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+  .trading-card-content{display:flex;flex:1;flex-direction:column;padding:1.35rem 1.4rem 1.45rem}
+  .trading-card-meta{display:flex;align-items:center;gap:.65rem;margin-bottom:.9rem;font:800 .58rem 'Plus Jakarta Sans',Manrope,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#71828e}
+  .trading-card-meta span:first-child{display:grid;place-items:center;width:29px;height:29px;border-radius:50%;background:#eaf6fb;color:var(--blue2);letter-spacing:0}
+  h3{color:var(--navy);font-size:clamp(1.15rem,1.5vw,1.38rem);line-height:1.2;letter-spacing:-.03em}
+  p{margin:.75rem 0 1.2rem;font-size:.82rem;line-height:1.6}
+  a{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-top:auto;padding-top:.9rem;border-top:1px solid var(--line);font:800 .76rem 'Plus Jakarta Sans',Manrope,sans-serif;color:var(--blue2)}
+  .trading-card-arrow{color:var(--orange);font-size:1rem;transition:transform .3s ease}
+  a:focus-visible{outline:2px solid var(--blue2);outline-offset:5px;border-radius:3px}
+  @media(hover:hover) and (pointer:fine){
+    .trading-card:hover{transform:translateY(-5px);border-color:#9ad7eb;box-shadow:0 20px 45px rgba(11,31,51,.12)}
+    .trading-card:hover .trading-card-image img{transform:scale(1.04)}
+    .trading-card:hover .trading-card-arrow{transform:translateX(4px)}
+  }
+  @media(max-width:600px){
+    .trading-card-content{padding:1.15rem 1.2rem 1.25rem}
+    .trading-card-meta{margin-bottom:.7rem}
+    p{margin:.65rem 0 1rem}
+  }
+  @media(prefers-reduced-motion:reduce){
+    .trading-card,.trading-card-image img,.trading-card-arrow{transition:none}
+  }
+</style>

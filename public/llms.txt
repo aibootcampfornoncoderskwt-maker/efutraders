@@ -1,0 +1,30 @@
+# EFU Goods Traders
+
+> EFU Goods Traders provides technology infrastructure services (business Wi-Fi, structured cabling, CCTV & surveillance, VoIP & PBX, network security, installation & support) and international trading & supply (construction materials, agricultural products, coconut products, spices/fruits/vegetables, mechanical equipment & components, general sourcing) across Kuwait, the UAE and India.
+
+EFU serves offices, villas, retail, warehouses, education and healthcare environments with end-to-end project delivery: survey, design, supply, installation and ongoing support.
+
+## Technology solutions
+- [Business Wi-Fi](https://www.efutraders.com/solutions/business-wifi): Coverage planning, access point installation, mesh and roaming setup for offices, villas and commercial facilities.
+- [Structured Cabling](https://www.efutraders.com/solutions/structured-cabling): Cat6, Cat6A and fibre infrastructure with cabinets, patch panels, labelling and testing.
+- [CCTV & Surveillance](https://www.efutraders.com/solutions/cctv-surveillance): Wired and IP surveillance, NVR/DVR configuration, remote viewing setup.
+- [VoIP & PBX](https://www.efutraders.com/solutions/voip-pbx): IP-PBX systems, IP phone deployment, system migration.
+- [Network Security](https://www.efutraders.com/solutions/network-security): Firewall deployment, VPN configuration, network segmentation.
+- [Installation & Support](https://www.efutraders.com/solutions/installation-support): On-site installation, troubleshooting, maintenance and upgrades.
+- [All solutions](https://www.efutraders.com/solutions)
+
+## Products
+[Technology products supplied](https://www.efutraders.com/products): network switches & routers, wireless access points, SFPs & transceivers, fibre & copper products, network cabinets & racks, CCTV cameras & recorders, PBX systems & IP phones, testing tools, microwave & satellite products, IT & office equipment.
+
+## Trading & Supply
+[International trading and sourcing](https://www.efutraders.com/trading-supply): civil & construction materials, agricultural products, coconut products, spices/fruits & vegetables, mechanical equipment & components, general sourcing & supply.
+
+## Locations
+- [Kuwait](https://www.efutraders.com/) — primary technology and trading operations.
+- [UAE](https://www.efutraders.com/locations/ae) — technology infrastructure and project supply.
+- [India](https://www.efutraders.com/locations/in) — trading, sourcing and technology products.
+
+## Company
+- [About EFU](https://www.efutraders.com/about)
+- [Contact / request a quote](https://www.efutraders.com/contact)
+- Email: sales@efutraders.com

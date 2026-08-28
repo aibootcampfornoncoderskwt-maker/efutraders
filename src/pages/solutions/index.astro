@@ -1,4 +1,182 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'; import Icon from '../../components/Icon.astro'; import { services } from '../../data/site';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import SplitHero from '../../components/SplitHero.astro';
+import Icon from '../../components/Icon.astro';
+import { services, company, breadcrumbList } from '../../data/site';
+
+const breadcrumbSchema = breadcrumbList([{name:'Home',url:'/'},{name:'Solutions',url:'/solutions'}], Astro.site);
+const servicesListSchema = {
+  '@context':'https://schema.org',
+  '@type':'ItemList',
+  itemListElement: services.map((s,i)=>({
+    '@type':'ListItem',
+    position: i+1,
+    name: s.title,
+    url: new URL(`/solutions/${s.slug}`, Astro.site).toString()
+  }))
+};
+
+const cardMedia: Record<string,{src:string;alt:string}> = {
+  'business-wifi': { src:'/images/solutions/business-wifi.webp', alt:'Technician installing a ceiling-mounted wireless access point in a modern office' },
+  'structured-cabling': { src:'/images/solutions/structured-cabling.webp', alt:'Labelled Cat6A patch panels and organised network cabling inside a server cabinet' },
+  'cctv-surveillance': { src:'/images/solutions/cctv-surveillance.webp', alt:'Ceiling-mounted CCTV dome camera installed in a modern commercial office' },
+  'installation-support': { src:'/images/solutions/installation-support.webp', alt:'Field technician testing and commissioning network equipment in a server room' }
+};
+
+const processSteps: [string,string,string][] = [
+  ['01','Survey','Assess the site, coverage, capacity and operational requirements.'],
+  ['02','Design & Supply','Plan the solution and source the appropriate equipment.'],
+  ['03','Install & Configure','Complete professional installation, testing and commissioning.'],
+  ['04','Support','Provide troubleshooting, upgrades and ongoing technical assistance.']
+];
+
+const kw = company.countries.kw;
+const ae = company.countries.ae;
 ---
-<BaseLayout title="Technology Solutions" description="Business Wi-Fi, structured cabling, CCTV, PBX, network security and installation solutions across Kuwait and the UAE."><section class="page-hero"><div class="container"><div class="breadcrumbs"><a href="/">Home</a> / Solutions</div><span class="eyebrow">TECHNOLOGY & INFRASTRUCTURE</span><h1>Complete solutions from survey to support.</h1><p>EFU brings planning, supply, installation and technical assistance together for reliable infrastructure across commercial and residential environments.</p></div></section><section class="section"><div class="container service-grid">{services.map((s,i)=><article class="service-card visible"><div class="icon"><Icon name={s.icon}/></div><span class="card-no">0{i+1}</span><h2 style="font-size:1.35rem">{s.title}</h2><p>{s.short}</p><a href={`/solutions/${s.slug}`}>Explore solution <span>→</span></a></article>)}</div></section></BaseLayout>
+<BaseLayout
+  title="Technology Solutions in Kuwait & UAE"
+  description="EFU provides business Wi-Fi, structured cabling, CCTV, VoIP, network security, installation and technical support across Kuwait and the UAE."
+  structuredData={[breadcrumbSchema, servicesListSchema]}
+>
+  <Fragment slot="head">
+    <link rel="preload" as="image" href="/images/solutions/hero-technician.webp" imagesrcset="/images/solutions/hero-technician-600.webp 600w, /images/solutions/hero-technician.webp 1000w" imagesizes="(max-width: 820px) 100vw, 46vw" fetchpriority="high" />
+  </Fragment>
+
+  <div class="container solutions-breadcrumb"><div class="breadcrumbs"><a href="/">Home</a> / Solutions</div></div>
+
+  <SplitHero
+    eyebrow="TECHNOLOGY & INFRASTRUCTURE"
+    heading="Complete technology solutions, from survey to support."
+    description="EFU plans, supplies, installs and supports reliable Wi-Fi, structured cabling, CCTV, business communication and network security systems across Kuwait and the UAE."
+    primaryCta={{ label:'Request a Site Survey', href:'/contact#quote' }}
+    secondaryCta={{ label:'Talk to an Expert', href:'/contact' }}
+    points={['Site assessment and planning','Professional installation','Ongoing technical support']}
+    image={{
+      src:'/images/solutions/hero-technician.webp',
+      srcSmall:'/images/solutions/hero-technician-600.webp',
+      width:1000,
+      height:1250,
+      alt:'EFU technician inspecting structured network cabling inside a server rack'
+    }}
+  />
+
+  <section class="section" id="services">
+    <div class="container">
+      <header class="section-head reveal">
+        <div><span class="eyebrow">WHAT WE DO</span><h2>Six ways EFU keeps your site connected and secure.</h2></div>
+        <p>Every engagement follows the same disciplined process across Kuwait and the UAE: survey, design, supply, install and support.</p>
+      </header>
+      <div class="solution-tile-grid">
+        {services.map((s,i) => {
+          const media = cardMedia[s.slug];
+          return (
+            <article class="solution-tile reveal">
+              <a class="solution-tile-link" href={`/solutions/${s.slug}`}>
+                <div class="solution-tile-media">
+                  {media
+                    ? <img src={media.src} alt={media.alt} width="900" height="563" loading="lazy" decoding="async" />
+                    : <div class="solution-tile-media-fallback" aria-hidden="true"><Icon name={s.icon} /></div>}
+                  <span class="solution-tile-no" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
+                </div>
+                <div class="solution-tile-body">
+                  <div class="solution-tile-icon" aria-hidden="true"><Icon name={s.icon} /></div>
+                  <h3>{s.title}</h3>
+                  <p>{s.short}</p>
+                  <span class="solution-tile-cta">Explore solution <span aria-hidden="true">→</span></span>
+                </div>
+              </a>
+            </article>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <section class="section process">
+    <div class="container">
+      <header class="section-head light reveal">
+        <div><span class="eyebrow">HOW WE WORK</span><h2>One team throughout your project.</h2></div>
+        <p>From the first site visit to ongoing support, EFU manages every stage of your technology infrastructure project.</p>
+      </header>
+      <div class="steps process-line">
+        {processSteps.map(x => <article class="reveal"><b>{x[0]}</b><h3>{x[1]}</h3><p>{x[2]}</p></article>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section solutions-cta">
+    <div class="container solutions-cta-grid">
+      <div class="solutions-cta-copy reveal">
+        <span class="eyebrow">PROJECT ENQUIRY</span>
+        <h2>Planning a network, security or communication project?</h2>
+        <p>Tell us about your site and requirements. Our team will help you plan the right solution for your location, budget and operational needs.</p>
+      </div>
+      <div class="location-switch reveal">
+        <input type="radio" name="solutions-location" id="loc-kw" class="sr-only" checked />
+        <label for="loc-kw"><span>Kuwait</span><small>Primary service coverage</small></label>
+        <input type="radio" name="solutions-location" id="loc-ae" class="sr-only" />
+        <label for="loc-ae"><span>UAE</span><small>Regional project support</small></label>
+
+        <div class="location-panel" data-panel="kw">
+          <a class="btn btn-white" href="/contact?country=Kuwait#quote">Request a Site Survey</a>
+          <a class="btn btn-outline-light" href={`https://wa.me/${kw.whatsapp}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          <a class="location-phone" href={`tel:${kw.tel}`}>{kw.phone}</a>
+        </div>
+        <div class="location-panel" data-panel="ae">
+          <a class="btn btn-white" href="/contact?country=United%20Arab%20Emirates#quote">Request a Site Survey</a>
+          <a class="btn btn-outline-light" href={`https://wa.me/${ae.whatsapp}`} target="_blank" rel="noopener noreferrer">Chat on WhatsApp</a>
+          <a class="location-phone" href={`tel:${ae.tel}`}>{ae.phone}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .solutions-breadcrumb{padding-top:1.6rem}
+  .solutions-breadcrumb .breadcrumbs{color:var(--muted);margin-bottom:0}
+
+  /* Service tiles */
+  .solution-tile-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+  .solution-tile{background:#fff;border:1px solid #e1eaf0;border-radius:20px;box-shadow:0 10px 28px rgba(11,31,51,.06);overflow:hidden;transition:opacity .6s ease,transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease,border-color .3s ease}
+  .solution-tile:hover,.solution-tile:focus-within{transform:translateY(-6px);box-shadow:0 22px 46px rgba(11,31,51,.14);border-color:#bfe0ef}
+  .solution-tile-link{display:flex;flex-direction:column;height:100%;color:inherit}
+  .solution-tile-link:focus-visible{outline:2px solid var(--blue2);outline-offset:-3px;border-radius:19px}
+  .solution-tile-media{position:relative;aspect-ratio:16/10;overflow:hidden;background:#eef4f8}
+  .solution-tile-media img{width:100%;height:100%;object-fit:cover;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+  .solution-tile:hover .solution-tile-media img,.solution-tile:focus-within .solution-tile-media img{transform:scale(1.04)}
+  .solution-tile-media-fallback{width:100%;height:100%;display:grid;place-items:center;background:linear-gradient(145deg,#0b1f33,#123d5d)}
+  .solution-tile-media-fallback :global(svg){width:50px;height:50px;stroke:#fff;opacity:.92}
+  .solution-tile-no{position:absolute;top:.9rem;right:1rem;padding:.28rem .58rem;border-radius:6px;background:rgba(5,18,29,.55);color:#fff;font:800 .68rem 'Plus Jakarta Sans',Manrope,sans-serif;letter-spacing:.06em;backdrop-filter:blur(4px)}
+  .solution-tile-body{padding:1.5rem 1.6rem 1.7rem;display:flex;flex-direction:column;flex:1}
+  .solution-tile-icon{width:44px;height:44px;border-radius:11px;background:#e9f6fb;color:var(--blue2);display:grid;place-items:center;margin-bottom:1rem}
+  .solution-tile-icon :global(svg){width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+  .solution-tile-body h3{font-size:1.16rem;color:var(--navy);margin:0 0 .55rem}
+  .solution-tile-body p{font-size:.88rem;line-height:1.6;color:var(--muted);flex:1;margin:0}
+  .solution-tile-cta{display:inline-flex;align-items:center;gap:.4rem;margin-top:1.15rem;font:800 .82rem 'Plus Jakarta Sans',Manrope,sans-serif;color:var(--blue2)}
+  .solution-tile-cta span{transition:transform .25s ease}
+  .solution-tile:hover .solution-tile-cta span,.solution-tile:focus-within .solution-tile-cta span{transform:translateX(4px)}
+  @media(max-width:980px){.solution-tile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media(max-width:620px){.solution-tile-grid{grid-template-columns:1fr}}
+  @media(prefers-reduced-motion:reduce){.solution-tile,.solution-tile-media img,.solution-tile-cta span{transition:none}}
+
+  /* Location-focused CTA */
+  .solutions-cta{position:relative;overflow:hidden;padding:5.5rem 0;background:linear-gradient(115deg,var(--blue2),#075884);color:#fff}
+  .solutions-cta:after{content:'';position:absolute;width:420px;height:420px;border:80px solid rgba(255,255,255,.07);border-radius:50%;right:-140px;top:-180px}
+  .solutions-cta-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:4rem;align-items:center}
+  .solutions-cta-copy p{color:#d7edf5;margin-top:1.1rem;max-width:480px}
+  .location-switch{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:.6rem 1rem;background:rgba(5,18,29,.28);border:1px solid rgba(255,255,255,.22);border-radius:18px;padding:1.4rem;backdrop-filter:blur(6px)}
+  .location-switch label{cursor:pointer;padding:.8rem .9rem;border-radius:12px;border:1px solid rgba(255,255,255,.28);display:flex;flex-direction:column;gap:.2rem;transition:background-color .2s ease,border-color .2s ease,color .2s ease}
+  .location-switch label span{font:800 .82rem 'Plus Jakarta Sans',Manrope,sans-serif}
+  .location-switch label small{font-size:.68rem;color:#c7dceb}
+  .location-switch input:checked + label{background:#fff;border-color:#fff;color:var(--navy)}
+  .location-switch input:checked + label small{color:#5d6b78}
+  .location-switch input:focus-visible + label{outline:2px solid #fff;outline-offset:2px}
+  .location-panel{grid-column:1/-1;display:none;flex-direction:column;gap:.7rem;margin-top:.3rem}
+  #loc-kw:checked ~ .location-panel[data-panel="kw"],#loc-ae:checked ~ .location-panel[data-panel="ae"]{display:flex}
+  .location-panel .btn{width:100%;justify-content:center}
+  .location-panel .btn-outline-light{border-color:rgba(255,255,255,.5);color:#fff}
+  .location-phone{color:#fff;font-weight:800;text-align:center;font-size:.95rem}
+  @media(max-width:980px){.solutions-cta-grid{grid-template-columns:1fr;gap:2.5rem}}
+  @media(max-width:560px){.location-switch{grid-template-columns:1fr 1fr}}
+</style>

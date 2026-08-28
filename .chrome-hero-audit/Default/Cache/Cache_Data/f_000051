@@ -1,0 +1,545 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="EFU delivers networking, Wi-Fi, structured cabling, CCTV, PBX, IT infrastructure and international trading solutions across Kuwait, UAE and India."><link rel="canonical" href="https://www.efutraders.com/"><link rel="alternate" hreflang="en-KW" href="https://www.efutraders.com/"><link rel="alternate" hreflang="en-AE" href="https://www.efutraders.com/locations/ae"><link rel="alternate" hreflang="en-IN" href="https://www.efutraders.com/locations/in"><link rel="alternate" hreflang="x-default" href="https://www.efutraders.com/"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="icon" type="image/jpeg" href="/efu-logo.jpg"><link rel="apple-touch-icon" href="/efu-logo.jpg"><meta name="theme-color" content="#0b1f33"><meta property="og:title" content="Technology &amp; Trading Solutions | EFU Goods Traders"><meta property="og:description" content="EFU delivers networking, Wi-Fi, structured cabling, CCTV, PBX, IT infrastructure and international trading solutions across Kuwait, UAE and India."><meta property="og:type" content="website"><meta property="og:url" content="https://www.efutraders.com/"><meta property="og:site_name" content="EFU Goods Traders"><meta property="og:locale" content="en_KW"><meta property="og:image" content="https://www.efutraders.com/images/og-cover.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Technology &amp; Trading Solutions | EFU Goods Traders"><meta name="twitter:description" content="EFU delivers networking, Wi-Fi, structured cabling, CCTV, PBX, IT infrastructure and international trading solutions across Kuwait, UAE and India."><meta name="twitter:image" content="https://www.efutraders.com/images/og-cover.jpg"><title>Technology &amp; Trading Solutions | EFU Goods Traders</title><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","@id":"https://www.efutraders.com/#organization","name":"EFU Goods Traders","url":"https://www.efutraders.com/","logo":"https://www.efutraders.com/efu-logo.jpg","email":"sales@efutraders.com","telephone":"+96565071368","areaServed":["Kuwait","United Arab Emirates","India"],"contactPoint":[{"@type":"ContactPoint","telephone":"+96565071368","contactType":"sales","areaServed":"KW","availableLanguage":["English"]},{"@type":"ContactPoint","telephone":"+971557535639","contactType":"sales","areaServed":"AE","availableLanguage":["English"]},{"@type":"ContactPoint","telephone":"+918589884138","contactType":"sales","areaServed":"IN","availableLanguage":["English"]}]}</script><script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do you provide both equipment and installation?","acceptedAnswer":{"@type":"Answer","text":"Yes. EFU can support product supply, installation, configuration and handover based on the requirements of each project."}},{"@type":"Question","name":"Can EFU conduct a site survey?","acceptedAnswer":{"@type":"Answer","text":"Yes. Contact the local team to arrange a survey and confirm its scope, availability and any applicable charges."}},{"@type":"Question","name":"Do you support villas and commercial properties?","acceptedAnswer":{"@type":"Answer","text":"EFU provides solutions for residences, offices, shops, warehouses and other commercial environments."}},{"@type":"Question","name":"Can you upgrade an existing network?","acceptedAnswer":{"@type":"Answer","text":"Yes. The team can assess existing cabling, wireless coverage and active equipment before recommending an upgrade path."}},{"@type":"Question","name":"Do you install Cat6, Cat6A and fibre cabling?","acceptedAnswer":{"@type":"Answer","text":"EFU supports structured copper and fibre cabling, subject to the site requirements and selected specification."}},{"@type":"Question","name":"How can I request a quotation?","acceptedAnswer":{"@type":"Answer","text":"Choose your country, send the project details through the quotation form or contact the local EFU team through WhatsApp or phone."}}]}</script><link rel="preload" as="image" href="/images/hero/technology-solutions.webp" imagesrcset="/images/hero/technology-solutions-960.webp 960w, /images/hero/technology-solutions.webp 1586w" imagesizes="100vw" fetchpriority="high"><style data-vite-dev-id="C:/Users/ADMIN/Downloads/EFU-Astro-Website/src/styles/global.css">@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');:root{--blue:#079dd8;--blue2:#0876ae;--orange:#f59a23;--navy:#0b1f33;--ink:#172433;--muted:#5d6b78;--bg:#f4f8fb;--line:#dde7ee;--white:#fff;--green:#25d366;--shadow:0 16px 45px rgba(11,31,51,.1)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Manrope,Arial,sans-serif;background:#fff;line-height:1.65}h1,h2,h3,.brand{font-family:Sora,Arial,sans-serif;line-height:1.12;letter-spacing:-.035em;margin:0}h1{font-size:clamp(2.55rem,5.6vw,5rem)}h2{font-size:clamp(2rem,4vw,3.45rem)}h3{font-size:1.2rem}p{color:var(--muted);margin:0}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1280px,calc(100% - 48px));margin-inline:auto}.skip-link{position:fixed;top:-100px;left:1rem;background:var(--navy);color:#fff;padding:.7rem 1rem;z-index:999}.skip-link:focus{top:1rem}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}.utility{background:var(--navy);color:#d9e7f1;font-size:.76rem}.utility-inner{height:34px;display:flex;align-items:center;justify-content:space-between}.utility-inner div{display:flex;gap:1.5rem}.utility a:hover{color:#fff}.header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid transparent;transition:.25s}.header.scrolled{border-color:var(--line);box-shadow:0 8px 30px rgba(11,31,51,.07)}.nav-wrap{height:84px;display:flex;align-items:center;gap:2rem}.header.scrolled .nav-wrap{height:72px}.brand{display:flex;align-items:center;gap:.65rem;font-weight:700;font-size:1.22rem;color:var(--navy);white-space:nowrap}.brand img{width:52px;height:52px;object-fit:contain;border-radius:9px}.brand small{display:block;font:600 .67rem Manrope;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}nav{display:flex;align-items:center;gap:1.6rem;margin-left:auto;font-size:.9rem;font-weight:600}nav>a,summary{cursor:pointer;padding:1.8rem 0;white-space:nowrap}summary{list-style:none}summary::-webkit-details-marker{display:none}summary:after{content:'⌄';padding-left:.4rem;color:var(--blue)}nav a:hover,summary:hover{color:var(--blue2)}nav details{position:relative}.mega,.dropdown{display:none;position:absolute;top:64px;left:50%;transform:translateX(-50%);background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);padding:1.25rem;min-width:280px}.mega{width:650px;grid-template-columns:1.1fr .9fr}.mega>div{display:grid;grid-template-columns:1fr 1fr;gap:.25rem}.mega strong{grid-column:1/-1;color:var(--navy);padding:.3rem .65rem}.mega a,.dropdown a{padding:.55rem .65rem;border-radius:7px;font-size:.84rem}.mega a:hover,.dropdown a:hover{background:var(--bg)}.mega aside{margin-left:1rem;background:var(--navy);color:#fff;border-radius:12px;padding:1.4rem}.mega aside p{color:#b9cbd8;font-size:.82rem;margin:.7rem 0}.mega aside a{padding:0;color:#fff}.dropdown{flex-direction:column}.header details[open] .mega{display:grid}.header details[open] .dropdown{display:flex}.nav-actions{display:flex;align-items:center;gap:.65rem}.nav-actions select{border:1px solid var(--line);border-radius:9px;padding:.65rem;background:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--orange);color:var(--navy);font-weight:800;border-radius:10px;padding:.92rem 1.3rem;border:1px solid var(--orange);transition:.2s}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(245,154,35,.25)}.btn-sm{padding:.67rem 1rem;font-size:.82rem}.btn-ghost{background:#fff;border-color:var(--line)}.btn-ghost:hover{border-color:var(--blue);box-shadow:none}.menu-toggle{display:none;border:0;background:none;padding:.5rem}.menu-toggle span{display:block;width:25px;height:2px;background:var(--navy);margin:5px}.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#f7fbfd 0%,#fff 65%)}.hero:before{content:'';position:absolute;width:700px;height:700px;border:1px solid #d5edf6;border-radius:50%;right:-300px;top:-360px}.hero-grid{min-height:720px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:5vw;padding:5rem 0}.eyebrow{display:flex;align-items:center;gap:.55rem;color:var(--blue2);font-size:.72rem;font-weight:800;letter-spacing:.14em;margin-bottom:1.2rem}.eyebrow i{width:4px;height:4px;border-radius:50%;background:var(--orange)}.hero h1{color:var(--navy);max-width:760px}.hero h1 em{font-style:normal;color:var(--blue2)}.hero-copy>p{font-size:1.12rem;max-width:670px;margin:1.6rem 0}.hero-actions{display:flex;gap:.8rem}.hero-points{display:flex;gap:1.5rem;margin-top:2rem;font-size:.8rem;font-weight:700}.hero-points span:before{content:'✓';color:var(--blue);margin-right:.45rem}.hero-visual{position:relative}.tech-scene{height:485px;border-radius:24px;background:linear-gradient(145deg,#102b43,#071522);padding:3rem;display:flex;align-items:center;justify-content:center;box-shadow:0 35px 70px rgba(11,31,51,.25);overflow:hidden;position:relative}.tech-scene:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(7,157,216,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(7,157,216,.07) 1px,transparent 1px);background-size:32px 32px}.rack{position:relative;width:78%;background:#07121b;border:1px solid #416176;border-radius:12px;padding:1rem;box-shadow:0 0 50px rgba(7,157,216,.14)}.rack-top{display:flex;justify-content:space-between;color:#81a6bb;font-size:.58rem;margin-bottom:.7rem}.rack-top span{color:#61d68b}.rack-unit{height:41px;border:1px solid #345066;border-radius:5px;margin:.45rem 0;display:flex;align-items:center;justify-content:space-between;padding:.5rem;color:#7693a6;font-size:.5rem;background:linear-gradient(90deg,#142838,#0d1b26)}.ports{display:flex;gap:4px}.ports i{width:8px;height:6px;background:#0ca5dc;border-radius:1px;box-shadow:0 0 5px #0ca5dc}.rack-unit:nth-child(odd) .ports i:nth-child(3n){background:var(--orange);box-shadow:0 0 5px var(--orange)}.signal{position:absolute;right:1.2rem;top:1.1rem;color:#fff;text-align:center}.signal i{display:block;border:1px solid rgba(7,157,216,.5);border-width:1px 1px 0;border-radius:50% 50% 0 0;width:70px;height:35px;margin:-25px auto 0}.signal b{font-size:.48rem;letter-spacing:.12em;color:#6fc8e9}.visual-note{position:absolute;bottom:-20px;left:-25px;background:#fff;padding:1.2rem 1.4rem;border-radius:13px;box-shadow:var(--shadow);border-left:4px solid var(--orange)}.visual-note strong,.visual-note span{display:block}.visual-note span{font-size:.72rem;color:var(--muted)}.trust{border-block:1px solid var(--line);background:#fff}.trust-grid{min-height:78px;display:grid;grid-template-columns:repeat(4,1fr);align-items:center}.trust-grid span{font-weight:700;font-size:.8rem;text-align:center;border-right:1px solid var(--line)}.trust-grid span:last-child{border:0}.trust-grid span:before{content:'◆';font-size:.5rem;color:var(--orange);margin-right:.6rem}.section{padding:7.5rem 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:4rem;margin-bottom:3.5rem}.section-head>div{max-width:780px}.section-head>p{max-width:440px}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.service-card{position:relative;border:1px solid var(--line);border-radius:17px;padding:1.8rem;min-height:330px;display:flex;flex-direction:column;transition:.25s;transition-delay:var(--delay)}.service-card:hover{transform:translateY(-5px);border-color:#9ad7eb;box-shadow:var(--shadow)}.icon{width:52px;height:52px;border-radius:12px;background:#e9f6fb;color:var(--blue2);display:grid;place-items:center;margin-bottom:2.4rem}.icon svg{width:25px;height:25px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.card-no{position:absolute;right:1.7rem;top:1.7rem;font-size:.67rem;font-weight:800;color:#9aaab6}.service-card p{font-size:.9rem;margin:1rem 0 1.5rem}.service-card>a{margin-top:auto;font-weight:800;font-size:.82rem;color:var(--blue2)}.service-card>a span{float:right}.process{background:var(--navy);position:relative;overflow:hidden}.process:after{content:'EFU';position:absolute;font:700 20rem Sora;color:rgba(255,255,255,.025);right:-2rem;bottom:-8rem}.light h2{color:#fff}.light p{color:#afc1ce}.steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;z-index:1}.steps article{padding:1.7rem;border-left:1px solid #294158}.steps b{color:var(--orange);font:600 3rem Sora}.steps h3{color:#fff;margin:1.8rem 0 .8rem}.steps p{color:#afc1ce;font-size:.87rem}.feature-stack{display:grid;gap:6rem}.feature{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:7vw}.feature.reverse .feature-art{order:2}.feature h2{margin-bottom:1.3rem}.feature p{margin-bottom:1.5rem}.text-link{color:var(--blue2);font-weight:800}.feature-art{height:410px;border-radius:22px;background:#eaf5f9;position:relative;overflow:hidden}.wifi-art .floor{position:absolute;inset:55px;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 80px),repeating-linear-gradient(#fff 0 2px,transparent 2px 70px);border:2px solid #fff;transform:perspective(500px) rotateX(55deg) rotateZ(-15deg);box-shadow:0 15px 35px rgba(8,118,174,.14)}.wifi-art .ap{position:absolute;left:43%;top:38%;width:80px;height:80px;border-radius:50%;background:#fff;display:grid;place-items:center;font-weight:800;color:var(--blue2);box-shadow:0 0 0 30px rgba(7,157,216,.1),0 0 0 70px rgba(7,157,216,.06)}.wifi-art i{position:relative;display:inline-block;margin:2rem .8rem;padding:.35rem .55rem;background:var(--navy);color:#fff;border-radius:5px;font:normal .6rem Manrope}.cable-art{background:var(--navy);display:grid;place-items:center}.cable-art:after{content:'';position:absolute;width:220px;height:220px;border-radius:50%;border:35px solid #152f47;box-shadow:inset 0 0 0 1px #476175}.cable-art span{position:absolute;z-index:2;width:290px;height:25px;background:hsl(calc(195 + var(--c)*25) 70% 48%);border-radius:30px;transform:rotate(calc(-18deg + var(--c)*12deg)) translateY(calc((var(--c) - 1.5)*42px));color:#fff;padding-left:1rem;font-size:.55rem;line-height:25px}.products{background:var(--bg)}.product-list{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #cad9e2}.product-list a{display:grid;grid-template-columns:55px 1fr auto;align-items:center;padding:1.2rem .5rem;border-bottom:1px solid #cad9e2;font-weight:700;transition:.2s}.product-list a:nth-child(odd){margin-right:1.5rem}.product-list a b{font-size:.65rem;color:var(--blue2)}.product-list a i{font-style:normal;color:var(--orange)}.product-list a:hover{padding-left:1rem;background:#fff}.industries .eyebrow{justify-content:center}.industries>div>h2{text-align:center;max-width:750px;margin:0 auto 3rem}.industry-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}.industry-grid article{padding:1.6rem;background:#fff;border:1px solid var(--line);border-radius:14px}.industry-grid article:first-child{grid-column:span 2;background:var(--blue2);color:#fff}.industry-grid article:first-child p{color:#d7eff8}.industry-grid b{color:var(--orange);font-size:.65rem}.industry-grid h3{margin:3rem 0 .7rem}.industry-grid p{font-size:.82rem}.trading{background:#f8f3ea}.trading-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:8vw;align-items:center}.trade-mark{height:480px;border-radius:24px;background:var(--orange);display:flex;flex-direction:column;justify-content:space-between;padding:2.5rem;position:relative;overflow:hidden}.trade-mark:after{content:'';position:absolute;width:380px;height:380px;border:70px solid rgba(255,255,255,.22);border-radius:50%;right:-140px;bottom:-120px}.trade-mark span{font:700 5rem Sora;color:var(--navy)}.trade-mark b{font:600 1.6rem Sora;color:var(--navy);z-index:1}.trade-list{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin:2rem 0}.trade-list span{font-size:.82rem;font-weight:700}.trade-list span:before{content:'✓';color:var(--blue2);margin-right:.5rem}.location-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.location-card{border:1px solid var(--line);border-radius:16px;padding:2rem;transition:.2s}.location-card>span{color:var(--orange);font-weight:800;font-size:.72rem}.location-card h3{font-size:1.7rem;margin:2.5rem 0 .8rem}.location-card p{font-size:.86rem;min-height:55px}.location-card b{display:block;margin-top:2rem;color:var(--blue2);font-size:.8rem}.location-card:hover{background:var(--navy);color:#fff;transform:translateY(-4px)}.location-card:hover p{color:#b8cbd8}.faq{background:var(--bg)}.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:7vw}.faq-grid>div:first-child p{margin:1.5rem 0}.faq details{border-top:1px solid #cad9e2}.faq details:last-child{border-bottom:1px solid #cad9e2}.faq summary{padding:1.35rem 2.5rem 1.35rem 0;font-weight:800;position:relative}.faq summary:after{content:'+';position:absolute;right:.3rem;font-size:1.3rem}.faq details[open] summary:after{content:'−'}.faq details p{padding:0 2rem 1.4rem 0;font-size:.88rem}.cta{padding:6rem 0;background:linear-gradient(115deg,var(--blue2),#075884);color:#fff}.cta-inner{display:flex;justify-content:space-between;align-items:center;gap:5vw}.cta h2{max-width:850px}.cta p{color:#d7edf5;margin-top:1.2rem}.cta-inner>div:last-child{display:flex;gap:.7rem;white-space:nowrap}.btn-white{background:#fff;border-color:#fff}.btn-outline-light{background:transparent;border-color:rgba(255,255,255,.55);color:#fff}footer{background:#071522;color:#fff;padding:5rem 0 1.5rem}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:4rem}.brand-light{color:#fff}.footer-grid p{color:#8fa5b5;font-size:.82rem;margin-top:1rem}.footer-grid h3{font:700 .75rem Manrope;letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.2rem;color:#8fa5b5}.footer-grid>div>a:not(.brand){display:block;color:#c3d0d9;font-size:.82rem;margin:.65rem 0}.footer-bottom{border-top:1px solid #1e3343;margin-top:4rem;padding-top:1.4rem;display:flex;justify-content:space-between;color:#7890a0;font-size:.72rem}.footer-bottom div{display:flex;gap:1.5rem}.whatsapp{position:fixed;right:22px;bottom:22px;width:52px;height:52px;background:var(--green);color:#082e18;border-radius:50%;display:grid;place-items:center;font-weight:900;z-index:45;box-shadow:0 10px 25px rgba(37,211,102,.3)}.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}.reveal.visible{opacity:1;transform:none}.page-hero{background:var(--navy);padding:6rem 0;color:#fff}.page-hero p{color:#b8cbd8;max-width:700px;margin-top:1.4rem}.breadcrumbs{font-size:.72rem;color:#89a3b5;margin-bottom:2rem}.content-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:6vw}.prose h2{font-size:2.1rem;margin:3rem 0 1rem}.prose p{margin:1rem 0}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem 0}.feature-list li{list-style:none;padding:1rem;border:1px solid var(--line);border-radius:10px;font-weight:700}.feature-list li:before{content:'✓';color:var(--blue);margin-right:.6rem}.side-card{position:sticky;top:110px;border-radius:16px;background:var(--bg);padding:1.7rem;height:max-content}.side-card h3{margin-bottom:.8rem}.side-card .btn{width:100%;margin-top:1.2rem}.quote-form{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.quote-form label{display:grid;gap:.35rem;font-size:.78rem;font-weight:700}.quote-form input,.quote-form select,.quote-form textarea{width:100%;border:1px solid #bdccd6;border-radius:9px;padding:.85rem;font:inherit;background:#fff}.quote-form textarea{min-height:150px}.quote-form .full{grid-column:1/-1}.quote-form button{justify-self:start}.form-note{font-size:.75rem}.legal{max-width:850px}.legal h2{font-size:1.6rem;margin:2rem 0 .7rem}
+@media(max-width:1050px){nav{gap:.9rem}nav>a,summary{font-size:.8rem}.nav-actions select{display:none}.hero-grid{grid-template-columns:1fr 1fr}.service-grid{grid-template-columns:1fr 1fr}.industry-grid{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1.3fr 1fr 1fr}.footer-grid>div:last-child{grid-column:2}.steps{grid-template-columns:1fr 1fr}.steps article{border-bottom:1px solid #294158}}
+@media(max-width:820px){.utility{display:none}.container{width:min(100% - 32px,1280px)}.nav-wrap{height:72px}.menu-toggle{display:block;margin-left:auto}.nav-actions{display:none}nav{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;border-top:1px solid var(--line);padding:1rem 1.2rem;max-height:calc(100vh - 72px);overflow:auto}nav.open{display:block}nav>a,nav summary{display:block;padding:.85rem}.header details[open] .mega,.header details[open] .dropdown{position:static;transform:none;width:100%;min-width:0;box-shadow:none;border:0;background:var(--bg);display:block}.mega aside{margin:1rem 0 0}.hero-grid{grid-template-columns:1fr;padding:5rem 0}.hero-visual{margin-top:1.5rem}.tech-scene{height:420px}.trust-grid{grid-template-columns:1fr 1fr}.trust-grid span{padding:1rem;border-bottom:1px solid var(--line)}.section{padding:5.5rem 0}.section-head,.cta-inner{display:block}.section-head>p{margin-top:1rem}.service-grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr;gap:2rem}.feature.reverse .feature-art{order:0}.product-list{grid-template-columns:1fr}.product-list a:nth-child(odd){margin:0}.trading-grid,.faq-grid,.content-grid{grid-template-columns:1fr}.trade-mark{height:330px}.footer-grid{grid-template-columns:1fr 1fr}.footer-grid>div:last-child{grid-column:auto}.cta-inner>div:last-child{margin-top:2rem}footer{padding-bottom:5rem}.side-card{position:static}}
+@media(max-width:560px){h1{font-size:2.55rem}.hero-grid{min-height:auto;padding:4rem 0}.hero-copy>p{font-size:1rem}.hero-actions{display:grid}.hero-points{display:grid;gap:.5rem}.tech-scene{height:330px;padding:1.4rem}.rack{width:95%}.visual-note{left:10px;bottom:-30px}.service-grid,.steps,.industry-grid,.location-grid{grid-template-columns:1fr}.service-card{min-height:290px}.steps article{border-left:0}.feature-art{height:320px}.industry-grid article:first-child{grid-column:auto}.trade-list,.quote-form{grid-template-columns:1fr}.quote-form .full{grid-column:auto}.trust-grid{font-size:.7rem}.footer-grid{grid-template-columns:1fr}.footer-grid>div:last-child{grid-column:auto}.footer-bottom{display:block}.footer-bottom div{margin-top:.8rem}.cta-inner>div:last-child{display:grid}.page-hero{padding:4rem 0}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+
+/* Premium redesign */
+h1,h2,h3,.brand{font-family:Syne,Manrope,sans-serif;letter-spacing:-.045em}h1,h2{font-weight:800}.header{background:rgba(255,255,255,.92);backdrop-filter:blur(18px)}.nav-wrap{height:92px}.header.scrolled .nav-wrap{height:76px}.brand img{width:62px;height:62px}.brand{font-size:1.28rem}.brand small{letter-spacing:.18em}.nav-item{position:relative}.nav-trigger{appearance:none;border:0;background:none;font:700 .86rem Manrope;color:var(--ink);padding:2rem 0;cursor:pointer}.nav-trigger:after{content:'+';display:inline-block;margin-left:.45rem;color:var(--blue2);transition:transform .2s}.nav-item.active .nav-trigger{color:var(--blue2)}.nav-item.active .nav-trigger:after{transform:rotate(45deg)}.nav-panel{display:block!important;visibility:hidden;opacity:0;pointer-events:none;transform:translate(-50%,12px);transition:opacity .22s ease,transform .22s ease,visibility .22s;top:68px}.nav-item.active .nav-panel{visibility:visible;opacity:1;pointer-events:auto;transform:translate(-50%,0)}.mega{grid-template-columns:1.25fr .75fr;width:760px;padding:1rem}.mega>div{gap:.15rem}.mega>div>a{display:grid}.mega>div>a small{font-size:.64rem;color:#7a8a96;font-weight:500;line-height:1.35;margin-top:.18rem}.mega aside{background:linear-gradient(145deg,var(--navy),#123d5d);display:flex;flex-direction:column;justify-content:flex-end;min-height:285px;position:relative;overflow:hidden}.mega aside:before{content:'';position:absolute;width:210px;height:210px;border:35px solid rgba(7,157,216,.15);border-radius:50%;top:-100px;right:-80px}.mega aside b{font:800 1.45rem Syne;line-height:1.1}.panel-kicker{font-size:.58rem;letter-spacing:.16em;color:#66c7e8;margin-bottom:auto}.dropdown{min-width:320px;padding:.75rem}.dropdown a{display:flex;justify-content:space-between;align-items:center}.dropdown a span{color:var(--orange)}
+.hero-photo{min-height:760px;background:var(--navy);color:#fff}.hero-image{position:absolute;inset:0;background:url('/images/hero-network.webp') center/cover no-repeat;animation:heroDrift 14s ease-in-out infinite alternate}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,18,29,.98) 0%,rgba(6,25,40,.92) 41%,rgba(6,25,40,.35) 72%,rgba(6,25,40,.18) 100%),linear-gradient(0deg,rgba(5,18,29,.5),transparent 60%)}.hero-photo:before{display:none}.hero-photo .hero-grid{position:relative;z-index:2;display:flex;min-height:760px}.hero-photo .hero-copy{max-width:800px}.hero-photo h1{color:#fff;font-size:clamp(3.2rem,6.2vw,6.3rem);line-height:.98;max-width:850px}.hero-photo h1 em{color:#62ccef}.hero-photo .hero-copy>p{color:#c8d7e2;font-size:1.15rem;max-width:690px}.btn-glass{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3);color:#fff;backdrop-filter:blur(10px)}.hero-photo .hero-points{color:#dce9f1}.hero-status{position:absolute;right:0;bottom:80px;width:310px;padding:1.2rem 1.4rem;border:1px solid rgba(255,255,255,.2);background:rgba(5,18,29,.62);backdrop-filter:blur(14px);border-radius:13px;display:grid;grid-template-columns:12px 1fr;gap:.15rem .75rem}.status-pulse{grid-row:1/3;width:9px;height:9px;margin-top:.3rem;background:#5de08b;border-radius:50%;box-shadow:0 0 0 7px rgba(93,224,139,.12);animation:pulse 2s ease infinite}.hero-status small{font-size:.58rem;letter-spacing:.16em;color:#7dd2ec}.hero-status strong{font-size:.78rem}.hero-scroll{position:absolute;z-index:2;bottom:28px;left:50%;transform:translateX(-50%);font-size:.55rem;letter-spacing:.18em;color:#a9c0ce}.hero-scroll i{display:inline-block;width:45px;height:1px;background:var(--orange);vertical-align:middle;margin-left:.7rem;animation:scrollLine 2s ease infinite}.trust{position:relative;z-index:3}.service-card{overflow:hidden;background:#fff}.service-card:before{content:'';position:absolute;top:0;left:0;width:0;height:3px;background:linear-gradient(90deg,var(--blue),var(--orange));transition:width .35s}.service-card:hover:before{width:100%}.service-card:hover .icon{transform:rotate(-5deg) scale(1.06)}.icon{transition:.25s}.service-card h3{font-size:1.35rem}.capabilities{background:#071522;position:relative;overflow:hidden}.capabilities:before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(7,157,216,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(7,157,216,.05) 1px,transparent 1px);background-size:42px 42px}.capability-gallery{position:relative;display:grid;grid-template-columns:1.35fr .65fr;gap:1rem}.capability-gallery article{position:relative;min-height:560px;border-radius:20px;overflow:hidden}.capability-gallery .cap-side{min-height:560px}.capability-gallery img{position:absolute;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}.capability-gallery article:after{content:'';position:absolute;inset:30% 0 0;background:linear-gradient(transparent,rgba(5,18,29,.96))}.capability-gallery article:hover img{transform:scale(1.045)}.capability-gallery article>div{position:absolute;z-index:2;left:2rem;right:2rem;bottom:2rem;color:#fff}.capability-gallery article span{font-size:.6rem;letter-spacing:.16em;color:#7ad3ef}.capability-gallery article h3{font-size:clamp(1.4rem,2.5vw,2.5rem);margin:.55rem 0}.capability-gallery article a{font-weight:800;font-size:.78rem;color:var(--orange)}.process{background:linear-gradient(135deg,#092039,#0a2f4a)}.process-line:before{content:'';position:absolute;top:39px;left:8%;right:8%;height:1px;background:linear-gradient(90deg,var(--orange),var(--blue));transform:scaleX(0);transform-origin:left;transition:transform 1.2s ease}.process-line:has(.visible):before{transform:scaleX(1)}.feature-art.image-art{background:#081b2b}.image-art img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}.image-art:hover img{transform:scale(1.05)}.image-art:after{content:'';position:absolute;inset:55% 0 0;background:linear-gradient(transparent,rgba(5,18,29,.75))}.image-label{position:absolute;z-index:2;left:1.3rem;bottom:1.2rem;color:#fff;font-size:.6rem;font-weight:800;letter-spacing:.14em}.section{padding:6.8rem 0}.reveal{transform:translateY(28px)}.reveal.visible{transform:none}.cta{position:relative;overflow:hidden}.cta:after{content:'';position:absolute;width:420px;height:420px;border:80px solid rgba(255,255,255,.07);border-radius:50%;right:-140px;top:-180px}.cta-inner{position:relative;z-index:2}@keyframes heroDrift{from{transform:scale(1.01)}to{transform:scale(1.055)}}@keyframes pulse{50%{box-shadow:0 0 0 12px rgba(93,224,139,0)}}@keyframes scrollLine{0%,100%{transform:scaleX(.35);transform-origin:left}50%{transform:scaleX(1);transform-origin:left}}
+@media(max-width:1050px){.nav-wrap{gap:1rem}.nav-trigger,nav>a{font-size:.76rem}.mega{width:680px}.hero-status{right:1rem}.capability-gallery{grid-template-columns:1fr 1fr}}
+@media(max-width:820px){.brand img{width:54px;height:54px}.nav-wrap{height:76px}.nav-item{position:static}.nav-trigger{display:flex;width:100%;justify-content:space-between;padding:.85rem}.nav-panel,.nav-item.active .nav-panel{position:static;transform:none!important;display:none!important;visibility:visible;opacity:1;pointer-events:auto;width:100%;min-width:0;box-shadow:none;border:0;background:var(--bg)}.nav-item.active .nav-panel{display:block!important}.mega>div{display:block}.mega>div>a{padding:.7rem}.mega aside{margin:0;min-height:190px}.hero-photo,.hero-photo .hero-grid{min-height:740px}.hero-overlay{background:linear-gradient(90deg,rgba(5,18,29,.96),rgba(6,25,40,.74)),linear-gradient(0deg,rgba(5,18,29,.7),transparent)}.hero-status{position:static;margin-top:2.4rem}.hero-scroll{display:none}.capability-gallery{grid-template-columns:1fr}.capability-gallery article,.capability-gallery .cap-side{min-height:460px}.process-line:before{display:none}}
+@media(max-width:560px){.hero-photo h1{font-size:3rem}.hero-photo .hero-grid{padding:4.5rem 0}.hero-status{width:100%}.capability-gallery article,.capability-gallery .cap-side{min-height:380px}.capability-gallery article>div{left:1.3rem;right:1.3rem;bottom:1.3rem}}
+@media(prefers-reduced-motion:reduce){.hero-image,.status-pulse,.hero-scroll i{animation:none!important}.capability-gallery img,.image-art img{transition:none!important}}
+.steps b,.trade-mark span,.trade-mark b{font-family:Syne,Manrope,sans-serif}
+
+/* Header navigation and dropdown behaviour */
+@media(min-width:821px){
+  .header,.nav-wrap,#main-nav{overflow:visible}
+  #main-nav{position:relative}
+  .nav-item{position:relative}
+  .nav-item::after{content:'';position:absolute;z-index:2;top:calc(100% - 1px);left:-12px;right:-12px;height:14px}
+  .nav-trigger:focus-visible{outline:2px solid var(--blue2);outline-offset:5px;border-radius:3px}
+  .nav-item:focus-within .nav-trigger{color:var(--blue2)}
+  .nav-item:focus-within .nav-trigger:before{transform:scaleX(1)}
+  .nav-panel{display:block!important;z-index:100;top:calc(100% - 1px);left:50%;margin:0;max-width:calc(100vw - 32px);opacity:0;visibility:hidden;pointer-events:none;transform:translateX(calc(-50% + var(--panel-shift,0px))) translateY(10px) scale(.985);transform-origin:top center;transition:opacity .2s ease,visibility .2s ease,transform .2s ease}
+  .nav-item.active .nav-panel{opacity:1;visibility:visible;pointer-events:auto;transform:translateX(calc(-50% + var(--panel-shift,0px))) translateY(0) scale(1)}
+  .mega.nav-panel{display:grid!important;grid-template-columns:minmax(0,1.4fr) minmax(250px,.6fr);width:min(780px,calc(100vw - 32px));height:min(400px,calc(100vh - 120px));max-height:calc(100vh - 120px);overflow:auto;padding:.8rem}
+  .mega>div{min-width:0;align-content:start;grid-template-columns:repeat(2,minmax(0,1fr));gap:.25rem}
+  .mega>div>a{min-height:94px;padding:.7rem .8rem;align-content:center}
+  .mega>div>a span{display:flex;align-items:center;justify-content:space-between;gap:.5rem}
+  .mega>div>a span::after{content:'→';color:var(--orange);transition:transform .18s ease}
+  .mega>div>a:hover span::after,.mega>div>a:focus-visible span::after{transform:translateX(3px)}
+  .mega>div>a:focus-visible,.dropdown a:focus-visible{outline:2px solid var(--blue2);outline-offset:-2px;background:#f1f8fb}
+  .mega aside{height:100%;min-height:0;margin-left:.4rem;padding:1.4rem;justify-content:center}
+  .mega aside .panel-kicker{margin-bottom:1.25rem}
+  .mega aside p{margin:.75rem 0 1.1rem}
+  .mega aside .text-link{margin-top:.2rem}
+  .dropdown.nav-panel{display:flex!important;flex-direction:column;width:340px;min-width:0;max-height:min(520px,calc(100vh - 120px));overflow-y:auto;overscroll-behavior:contain;padding:.75rem}
+  .dropdown a{flex:0 0 auto;min-height:44px;padding:.65rem .8rem;gap:1rem}
+  .dropdown a span{margin-left:auto;transition:transform .18s ease}
+  .dropdown a:hover span,.dropdown a:focus-visible span{transform:translateX(3px)}
+}
+
+@media(max-width:820px){
+  #main-nav{overscroll-behavior:contain}
+  .nav-trigger{min-height:48px}
+  .nav-panel{max-height:none;overflow:visible}
+  .mega>div>a,.dropdown a{min-height:44px}
+  .dropdown a{display:flex;align-items:center;justify-content:space-between;padding:.7rem .85rem}
+  .mega aside{height:auto;padding:1.25rem}
+}
+
+/* Corporate typography and navigation refinement */
+h1,h2,h3,.brand,.steps b,.trade-mark span,.trade-mark b{font-family:'Plus Jakarta Sans',Manrope,sans-serif;letter-spacing:-.04em}h1,h2{font-weight:800}.header{background:rgba(255,255,255,.96)}.nav-wrap{height:86px}.header.scrolled .nav-wrap{height:74px}.brand img{width:60px;height:60px}.brand{font-size:1.25rem;letter-spacing:-.025em}.brand small{letter-spacing:.16em}.nav-item{height:100%;display:flex;align-items:center}.nav-trigger{font:700 .84rem 'Plus Jakarta Sans',Manrope,sans-serif;padding:1.2rem .15rem;display:flex;align-items:center;gap:.55rem;position:relative;transition:color .2s}.nav-trigger:before,nav>a:before{content:'';position:absolute;left:0;right:0;bottom:17px;height:2px;background:var(--orange);transform:scaleX(0);transform-origin:center;transition:transform .22s ease}.nav-trigger:after{content:'';width:6px;height:6px;border-right:1.6px solid var(--blue2);border-bottom:1.6px solid var(--blue2);transform:rotate(45deg) translateY(-2px);transition:transform .22s}.nav-item.active .nav-trigger,.nav-trigger:hover{color:var(--blue2)}.nav-item.active .nav-trigger:before,.nav-trigger:hover:before,nav>a:hover:before{transform:scaleX(1)}.nav-item.active .nav-trigger:after{transform:rotate(225deg) translate(-1px,-1px)}nav>a{position:relative;font:700 .84rem 'Plus Jakarta Sans',Manrope,sans-serif}.nav-panel{top:76px;border:1px solid #d5e2ea;box-shadow:0 24px 65px rgba(11,31,51,.16);transform:translate(-50%,14px) scale(.985)}.nav-item.active .nav-panel{transform:translate(-50%,0) scale(1)}.mega{grid-template-columns:1.3fr .7fr;width:780px;padding:.8rem;border-radius:18px}.mega>div{gap:.1rem;padding:.45rem}.mega>div>strong{font:800 .65rem 'Plus Jakarta Sans';letter-spacing:.12em;color:#80909c;text-transform:uppercase;margin-bottom:.35rem}.mega>div>a{border-radius:10px;padding:.7rem .8rem;border:1px solid transparent;transition:.18s}.mega>div>a:hover{background:#f1f8fb;border-color:#d9ebf2;transform:translateX(2px)}.mega>div>a span{font:700 .82rem 'Plus Jakarta Sans';color:var(--navy)}.mega>div>a small{font-size:.64rem;color:#71828e;line-height:1.4}.mega aside{min-height:300px;border-radius:13px;margin-left:.4rem}.mega aside b{font:800 1.38rem 'Plus Jakarta Sans';line-height:1.18;letter-spacing:-.035em}.dropdown{min-width:340px;padding:.75rem;border-radius:16px}.dropdown a{padding:.72rem .8rem;border-radius:9px;font:650 .8rem 'Plus Jakarta Sans';transition:.18s}.dropdown a:hover{background:#f1f8fb;padding-left:1rem}.hero-photo h1{font-family:'Plus Jakarta Sans',Manrope,sans-serif;font-size:clamp(3rem,4.65vw,5rem);line-height:1.04;max-width:800px;letter-spacing:-.055em}.hero-photo .hero-copy>p{font-size:1.1rem;max-width:680px}
+@media(max-width:1050px){.nav-trigger,nav>a{font-size:.74rem}.mega{width:700px}.hero-photo h1{font-size:clamp(3rem,5.2vw,4.4rem)}}
+@media(max-width:820px){.nav-wrap{height:76px}.nav-item{height:auto;display:block}.nav-trigger{padding:.9rem;width:100%}.nav-trigger:before,nav>a:before{display:none}.nav-trigger:after{margin-left:auto}.hero-photo h1{font-size:clamp(2.8rem,10vw,4rem);line-height:1.06}}
+@media(max-width:560px){.hero-photo h1{font-size:2.7rem;letter-spacing:-.045em}.brand img{width:52px;height:52px}}
+
+/* Keep final navigation geometry ahead of earlier theme refinements. */
+@media(min-width:821px){
+  .nav-panel{top:calc(100% - 1px);transform:translateX(calc(-50% + var(--panel-shift,0px))) translateY(10px) scale(.985)}
+  .nav-item.active .nav-panel{transform:translateX(calc(-50% + var(--panel-shift,0px))) translateY(0) scale(1)}
+  .mega.nav-panel{grid-template-columns:minmax(0,1.4fr) minmax(250px,.6fr);width:min(780px,calc(100vw - 32px))}
+  .mega aside{min-height:0}
+  .dropdown.nav-panel{width:340px}
+}
+
+/* ==========================================================================
+   Dropdown visual refinement — Solutions / Products / Trading & Supply.
+   Visual polish only: no structure, content, order, routes or interaction
+   logic changes. Panel chrome (shadow/blur/border) is desktop-only so the
+   mobile accordion keeps its flat, shadow-free rows.
+   ========================================================================== */
+@media(min-width:821px){
+  .nav-panel{
+    background:rgba(255,255,255,.98);
+    border:1px solid #d9e5ec;
+    border-radius:18px;
+    border-top:3px solid var(--orange);
+    box-shadow:0 24px 70px rgba(11,31,51,.16);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    transition:opacity .22s ease-out,visibility .22s ease-out,transform .22s cubic-bezier(.16,1,.3,1);
+  }
+}
+
+/* Solutions — service links as compact interactive cards */
+.mega>div>a{padding:12px 14px}
+.mega>div>a span{position:relative;justify-content:flex-start;padding-right:1.3rem;font-size:.875rem}
+.mega>div>a span::before{content:'';width:5px;height:5px;flex:0 0 auto;border-radius:50%;background:var(--blue);opacity:.85}
+.mega>div>a span::after{position:absolute;right:0;top:50%;margin:0;opacity:.55;transform:translateY(-50%) translateX(0);transition:transform .18s ease,opacity .18s ease}
+.mega>div>a:hover span::after,.mega>div>a:focus-visible span::after{opacity:1;transform:translateY(-50%) translateX(4px)}
+.mega>div>a small{font-size:.75rem;line-height:1.45;color:#57666f;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+
+/* Solutions — CTA panel */
+.mega aside{
+  background:
+    radial-gradient(circle at 100% 0%, rgba(7,157,216,.24), transparent 42%),
+    linear-gradient(145deg,#0b1f33,#103b59);
+  padding:1.6rem 1.5rem;
+}
+.mega aside:before{border-color:rgba(7,157,216,.12)}
+.mega aside b{line-height:1.28}
+.mega aside p{color:#cfe1ec}
+.mega aside .text-link{display:inline-flex;align-items:center;border-bottom:1px solid transparent;transition:transform .18s ease,border-color .18s ease}
+.mega aside .text-link:hover{transform:translateX(3px);border-bottom-color:rgba(255,255,255,.55)}
+.mega aside .text-link:focus-visible{outline:2px solid #fff;outline-offset:4px;border-radius:3px;transform:translateX(3px);border-bottom-color:rgba(255,255,255,.55)}
+
+/* Products & Trading — refined row treatment */
+.dropdown a{
+  position:relative;
+  padding:.8rem .85rem;
+  gap:.6rem;
+  line-height:1.3;
+  white-space:normal;
+  border-bottom:1px solid #edf2f5;
+  transition:background-color .18s ease,color .18s ease,padding-left .18s ease;
+}
+.dropdown a:last-child{border-bottom:0}
+.dropdown a::before{content:'';position:absolute;left:2px;top:50%;width:3px;height:18px;border-radius:3px;background:var(--blue);transform:translateY(-50%) scaleY(0);transform-origin:center;transition:transform .18s ease}
+.dropdown a:hover,.dropdown a:focus-visible{background:#f1f8fb;color:var(--blue2);padding-left:15px}
+.dropdown a:hover::before,.dropdown a:focus-visible::before{transform:translateY(-50%) scaleY(1)}
+.dropdown a span{flex-shrink:0;opacity:.6;font-size:.78rem;transition:transform .18s ease,opacity .18s ease,color .18s ease}
+.dropdown a:hover span,.dropdown a:focus-visible span{opacity:1;color:var(--blue2)}
+</style><style data-vite-dev-id="C:/Users/ADMIN/Downloads/EFU-Astro-Website/src/components/HeroShowcase.astro?astro&amp;type=style&amp;index=0&amp;lang.css">.hero-showcase[data-astro-cid-qfm3g2kd] {
+  position: relative;
+  isolation: isolate;
+  height: clamp(650px, 76vh, 780px);
+  min-height: 650px;
+  overflow: hidden;
+  background: #071522;
+  color: #fff;
+}
+
+.hero-scene-stack[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd], .hero-scene-media[data-astro-cid-qfm3g2kd], .hero-scene-overlay[data-astro-cid-qfm3g2kd] {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd] {
+  z-index: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .8s, visibility .8s;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.hero-scene-media[data-astro-cid-qfm3g2kd] {
+  overflow: hidden;
+  background: #071522;
+}
+
+.hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: scale(1.02);
+  transition: transform 8s ease-out;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd] {
+  transform: scale(1.06);
+}
+
+.hero-scene-overlay[data-astro-cid-qfm3g2kd] {
+  background: linear-gradient(90deg, #05121dfa 0%, #061928eb 43%, #06192873 70%, #0619282e 100%), linear-gradient(0deg, #05121db3, #0000 64%);
+}
+
+.hero-scene-layout[data-astro-cid-qfm3g2kd] {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 4rem 0 11rem;
+}
+
+.hero-scene-copy[data-astro-cid-qfm3g2kd] {
+  width: min(760px, 68%);
+}
+
+.showcase-eyebrow[data-astro-cid-qfm3g2kd] {
+  display: block;
+  margin-bottom: 1.15rem;
+  color: #75d2f0;
+  font: 800 .68rem Plus Jakarta Sans, Manrope, sans-serif;
+  letter-spacing: .15em;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd] h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h2[data-astro-cid-qfm3g2kd] {
+  max-width: 780px;
+  color: #fff;
+  font: 800 clamp(3rem, 4.65vw, 5rem) / 1.04 Plus Jakarta Sans, Manrope, sans-serif;
+  letter-spacing: -.055em;
+}
+
+.hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd] {
+  max-width: 680px;
+  margin: 1.35rem 0 1.5rem;
+  color: #c8d7e2;
+  font-size: 1.06rem;
+  line-height: 1.7;
+}
+
+.showcase-actions[data-astro-cid-qfm3g2kd] {
+  display: flex;
+  gap: .8rem;
+}
+
+.showcase-secondary[data-astro-cid-qfm3g2kd] {
+  background: #ffffff14;
+  border-color: #ffffff4d;
+  color: #fff;
+  backdrop-filter: blur(10px);
+}
+
+.showcase-points[data-astro-cid-qfm3g2kd] {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .7rem 1.4rem;
+  margin-top: 1.4rem;
+  color: #dce9f1;
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.showcase-points[data-astro-cid-qfm3g2kd] span[data-astro-cid-qfm3g2kd]:before {
+  content: "✓";
+  margin-right: .42rem;
+  color: var(--blue);
+}
+
+.showcase-status[data-astro-cid-qfm3g2kd] {
+  position: absolute;
+  right: 0;
+  bottom: 155px;
+  width: 310px;
+  padding: 1.05rem 1.2rem;
+  border: 1px solid #fff3;
+  border-radius: 13px;
+  background: #05121dad;
+  backdrop-filter: blur(14px);
+  display: grid;
+  grid-template-columns: 12px 1fr;
+  gap: .12rem .7rem;
+}
+
+.showcase-status[data-astro-cid-qfm3g2kd] .status-pulse[data-astro-cid-qfm3g2kd] {
+  grid-row: 1 / 3;
+}
+
+.showcase-status[data-astro-cid-qfm3g2kd] small[data-astro-cid-qfm3g2kd] {
+  font-size: .56rem;
+  letter-spacing: .14em;
+  color: #7dd2ec;
+}
+
+.showcase-status[data-astro-cid-qfm3g2kd] strong[data-astro-cid-qfm3g2kd] {
+  font-size: .74rem;
+}
+
+.hero-showcase-controls[data-astro-cid-qfm3g2kd] {
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  bottom: 28px;
+  transform: translateX(-50%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 1.2rem;
+  padding-right: 72px;
+}
+
+.hero-scene-tabs[data-astro-cid-qfm3g2kd] {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 860px;
+}
+
+.hero-scene-tab[data-astro-cid-qfm3g2kd] {
+  position: relative;
+  min-height: 62px;
+  padding: 1rem .8rem .55rem;
+  border: 0;
+  border-top: 1px solid #ffffff47;
+  background: none;
+  color: #9db2c0;
+  text-align: left;
+  font: 700 .7rem Plus Jakarta Sans, Manrope, sans-serif;
+  cursor: pointer;
+  transition: color .25s, background .25s;
+}
+
+.hero-scene-tab[data-astro-cid-qfm3g2kd][aria-current="true"] {
+  color: #fff;
+  background: linear-gradient(#ffffff12, #0000);
+}
+
+.hero-tab-number[data-astro-cid-qfm3g2kd] {
+  display: block;
+  margin-bottom: .25rem;
+  color: var(--orange);
+  font-size: .57rem;
+  letter-spacing: .12em;
+}
+
+.hero-tab-progress[data-astro-cid-qfm3g2kd] {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--orange);
+  transform: scaleX(0);
+  transform-origin: 0;
+}
+
+.hero-scene-tab[data-astro-cid-qfm3g2kd][aria-current="true"] .hero-tab-progress[data-astro-cid-qfm3g2kd] {
+  animation: 7.5s linear forwards heroSceneProgress;
+}
+
+.hero-showcase[data-astro-cid-qfm3g2kd].is-autoplay-paused .hero-tab-progress[data-astro-cid-qfm3g2kd] {
+  animation-play-state: paused;
+}
+
+.hero-showcase[data-astro-cid-qfm3g2kd].is-autoplay-stopped .hero-scene-tab[data-astro-cid-qfm3g2kd][aria-current="true"] .hero-tab-progress[data-astro-cid-qfm3g2kd] {
+  animation: none;
+  transform: scaleX(1);
+}
+
+.hero-transport[data-astro-cid-qfm3g2kd] {
+  display: flex;
+  gap: .4rem;
+  margin-right: 2px;
+}
+
+.hero-transport[data-astro-cid-qfm3g2kd] button[data-astro-cid-qfm3g2kd] {
+  width: 38px;
+  height: 38px;
+  border: 1px solid #ffffff47;
+  border-radius: 50%;
+  background: #05121d85;
+  color: #fff;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.hero-transport[data-astro-cid-qfm3g2kd] button[data-astro-cid-qfm3g2kd]:disabled {
+  cursor: default;
+  opacity: .48;
+}
+
+.hero-scene-tab[data-astro-cid-qfm3g2kd]:focus-visible, .hero-transport[data-astro-cid-qfm3g2kd] button[data-astro-cid-qfm3g2kd]:focus-visible {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd] .showcase-eyebrow[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h2[data-astro-cid-qfm3g2kd], .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-actions[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-points[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-status[data-astro-cid-qfm3g2kd] {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity .38s, transform .38s;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-eyebrow[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active h2[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-actions[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-points[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-status[data-astro-cid-qfm3g2kd] {
+  opacity: 1;
+  transform: none;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active h2[data-astro-cid-qfm3g2kd] {
+  transition-delay: 80ms;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd] {
+  transition-delay: .15s;
+}
+
+.hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-actions[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-points[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .showcase-status[data-astro-cid-qfm3g2kd] {
+  transition-delay: .22s;
+}
+
+@keyframes heroSceneProgress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (width <= 1050px) {
+  .hero-scene-copy[data-astro-cid-qfm3g2kd] {
+    width: 70%;
+  }
+
+  .showcase-status[data-astro-cid-qfm3g2kd] {
+    right: 1rem;
+    width: 285px;
+  }
+}
+
+@media (width <= 820px) {
+  .hero-showcase[data-astro-cid-qfm3g2kd] {
+    height: 880px;
+    min-height: 880px;
+  }
+
+  .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd] {
+    object-position: 62% center;
+  }
+
+  .hero-scene-products[data-astro-cid-qfm3g2kd] .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd], .hero-scene-trading[data-astro-cid-qfm3g2kd] .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd] {
+    object-position: 64% center;
+  }
+
+  .hero-scene-overlay[data-astro-cid-qfm3g2kd] {
+    background: linear-gradient(90deg, #05121df7, #061928d1), linear-gradient(0deg, #05121de6, #05121d33 75%);
+  }
+
+  .hero-scene-layout[data-astro-cid-qfm3g2kd] {
+    align-items: flex-start;
+    padding: 3.3rem 0 17rem;
+  }
+
+  .hero-scene-copy[data-astro-cid-qfm3g2kd] {
+    width: 100%;
+  }
+
+  .hero-scene[data-astro-cid-qfm3g2kd] h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h2[data-astro-cid-qfm3g2kd] {
+    font-size: clamp(2.45rem, 9vw, 3.55rem);
+    line-height: 1.06;
+  }
+
+  .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd] {
+    max-width: 620px;
+    font-size: .96rem;
+    line-height: 1.6;
+  }
+
+  .showcase-status[data-astro-cid-qfm3g2kd] {
+    right: 16px;
+    bottom: 206px;
+    left: 16px;
+    width: auto;
+    padding: .8rem 1rem;
+  }
+
+  .hero-showcase-controls[data-astro-cid-qfm3g2kd] {
+    bottom: 74px;
+    display: block;
+    padding-right: 0;
+  }
+
+  .hero-scene-tabs[data-astro-cid-qfm3g2kd] {
+    display: flex;
+    max-width: none;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    scroll-snap-type: x proximity;
+  }
+
+  .hero-scene-tabs[data-astro-cid-qfm3g2kd]::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-scene-tab[data-astro-cid-qfm3g2kd] {
+    flex: 0 0 185px;
+    scroll-snap-align: start;
+  }
+
+  .hero-transport[data-astro-cid-qfm3g2kd] {
+    justify-content: flex-end;
+    margin: 10px 0 0;
+  }
+}
+
+@media (width <= 560px) {
+  .showcase-eyebrow[data-astro-cid-qfm3g2kd] {
+    font-size: .6rem;
+    line-height: 1.5;
+  }
+
+  .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd] {
+    margin: 1rem 0 1.15rem;
+    font-size: .9rem;
+  }
+
+  .showcase-actions[data-astro-cid-qfm3g2kd] {
+    display: grid;
+    gap: .55rem;
+  }
+
+  .showcase-actions[data-astro-cid-qfm3g2kd] .btn[data-astro-cid-qfm3g2kd] {
+    min-height: 45px;
+    padding: .72rem 1rem;
+  }
+
+  .showcase-points[data-astro-cid-qfm3g2kd] {
+    display: grid;
+    gap: .28rem;
+    margin-top: 1rem;
+  }
+
+  .hero-scene-tab[data-astro-cid-qfm3g2kd] {
+    flex-basis: 168px;
+    min-height: 56px;
+    padding: .85rem .7rem .45rem;
+  }
+}
+
+@media (width <= 380px) {
+  .hero-showcase[data-astro-cid-qfm3g2kd] {
+    height: 920px;
+    min-height: 920px;
+  }
+
+  .hero-scene[data-astro-cid-qfm3g2kd] h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h2[data-astro-cid-qfm3g2kd] {
+    font-size: 2.28rem;
+  }
+
+  .hero-scene-layout[data-astro-cid-qfm3g2kd] {
+    padding-top: 2.7rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-scene[data-astro-cid-qfm3g2kd], .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-eyebrow[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h1[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] h2[data-astro-cid-qfm3g2kd], .hero-scene-copy[data-astro-cid-qfm3g2kd] > p[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-actions[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-points[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd] .showcase-status[data-astro-cid-qfm3g2kd] {
+    transition: none;
+  }
+
+  .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd], .hero-scene[data-astro-cid-qfm3g2kd].is-active .hero-scene-media[data-astro-cid-qfm3g2kd] img[data-astro-cid-qfm3g2kd] {
+    transform: scale(1.02);
+  }
+
+  .hero-tab-progress[data-astro-cid-qfm3g2kd] {
+    animation: none !important;
+  }
+}
+</style><script type="module" src="/@vite/client"></script><script type="module" src="/@id/astro/runtime/client/dev-toolbar/entrypoint.js"></script><script>window.__astro_dev_toolbar__ = {"root":"C:\\Users\\ADMIN\\Downloads\\EFU-Astro-Website\\","version":"7.2.9","debugInfo":"Astro                    v7.2.9\nNode                     v24.19.0\nSystem                   Windows (x64)\nPackage Manager          unknown\nOutput                   static\nAdapter                  none\nIntegrations             @astrojs/sitemap"}</script><script type="module" src="/src/styles/global.css"></script><script type="module" src="/src/components/HeroShowcase.astro?astro&type=style&index=0&lang.css"></script></head><body data-country="kw"><a class="skip-link" href="#main">Skip to content</a><div class="utility"><div class="container utility-inner"><span>Operating across Kuwait, UAE & India</span><div><a href="tel:+96565071368">+965 6507 1368</a><a href="mailto:sales@efutraders.com">sales@efutraders.com</a></div></div></div><header class="header" id="header"><div class="container nav-wrap"><a href="/" class="brand" aria-label="EFU Goods Traders home"><img src="/efu-logo.jpg" alt="EFU logo" width="58" height="58"><span>EFU <small>Goods Traders</small></span></a><button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b class="sr-only">Menu</b></button><nav id="main-nav" aria-label="Main navigation"><a href="/">Home</a><div class="nav-item"><button class="nav-trigger" id="solutions-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="solutions-menu">Solutions</button><div class="mega nav-panel" id="solutions-menu" aria-labelledby="solutions-trigger"><div><strong>Technology solutions</strong><a href="/solutions/business-wifi"><span>Business Wi-Fi</span><small>Professionally planned routers, access points and wireless coverage for offices, villas and commercial facilities.</small></a><a href="/solutions/structured-cabling"><span>Structured Cabling</span><small>Organised Cat6, Cat6A and fibre infrastructure with cabinets, patch panels, labelling and testing.</small></a><a href="/solutions/cctv-surveillance"><span>CCTV &amp; Surveillance</span><small>Wired and IP surveillance solutions designed around site coverage, monitoring and security requirements.</small></a><a href="/solutions/voip-pbx"><span>VoIP &amp; PBX</span><small>Business voice, IP phone and telephone exchange solutions for efficient internal and external communication.</small></a><a href="/solutions/network-security"><span>Network Security</span><small>Firewall, VPN, segmentation and secure connectivity solutions based on operational requirements.</small></a><a href="/solutions/installation-support"><span>Installation &amp; Support</span><small>On-site installation, configuration, troubleshooting, upgrades and continuing technical assistance.</small></a></div><aside><span class="panel-kicker">END-TO-END DELIVERY</span><b>One team from survey to support.</b><p>Plan, supply, install and maintain critical technology infrastructure.</p><a class="text-link" href="/solutions">View all solutions →</a></aside></div></div><div class="nav-item"><button class="nav-trigger" id="products-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="products-menu">Products</button><div class="dropdown nav-panel" id="products-menu" aria-labelledby="products-trigger"><a href="/products">Network switches &amp; routers<span>→</span></a><a href="/products">Wireless access points<span>→</span></a><a href="/products">SFPs &amp; transceivers<span>→</span></a><a href="/products">Fibre &amp; copper products<span>→</span></a><a href="/products">Network cabinets &amp; racks<span>→</span></a><a href="/products">CCTV cameras &amp; recorders<span>→</span></a><a href="/products">PBX systems &amp; IP phones<span>→</span></a><a href="/products">Testing tools<span>→</span></a><a href="/products">Microwave &amp; satellite products<span>→</span></a><a href="/products">IT &amp; office equipment<span>→</span></a></div></div><div class="nav-item"><button class="nav-trigger" id="trading-trigger" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="trading-menu">Trading & Supply</button><div class="dropdown nav-panel" id="trading-menu" aria-labelledby="trading-trigger"><a href="/trading-supply">Civil &amp; construction materials<span>→</span></a><a href="/trading-supply">Agricultural products<span>→</span></a><a href="/trading-supply">Coconut products<span>→</span></a><a href="/trading-supply">Spices, fruits &amp; vegetables<span>→</span></a><a href="/trading-supply">Mechanical equipment &amp; components<span>→</span></a><a href="/trading-supply">General sourcing &amp; supply<span>→</span></a></div></div><a href="/about">About</a><a href="/contact">Contact</a></nav><div class="nav-actions"><select aria-label="Select country" id="country-select"><option value="kw" selected>Kuwait</option><option value="ae">UAE</option><option value="in">India</option></select><a class="btn btn-sm" href="/contact#quote">Request a Quote</a></div></div></header><main id="main"><section class="hero-showcase" aria-roledescription="carousel" aria-label="EFU business areas" data-hero-showcase data-astro-cid-qfm3g2kd><div class="hero-scene-stack" data-astro-cid-qfm3g2kd><article class="hero-scene hero-scene-technology is-active" id="hero-scene-0" role="tabpanel" aria-roledescription="slide" aria-labelledby="hero-tab-0" aria-hidden="false" data-hero-scene data-astro-cid-qfm3g2kd><div class="hero-scene-media" aria-hidden="true" data-astro-cid-qfm3g2kd><img src="/images/hero/technology-solutions.webp" srcset="/images/hero/technology-solutions-960.webp 960w, /images/hero/technology-solutions.webp 1586w" sizes="100vw" alt="" width="1586" height="992" loading="eager" fetchpriority="high" decoding="sync" data-astro-cid-qfm3g2kd></div><div class="hero-scene-overlay" aria-hidden="true" data-astro-cid-qfm3g2kd></div><div class="container hero-scene-layout" data-astro-cid-qfm3g2kd><div class="hero-scene-copy" data-astro-cid-qfm3g2kd><span class="showcase-eyebrow" data-astro-cid-qfm3g2kd>NETWORKING • SECURITY • COMMUNICATION</span><h1 data-astro-cid-qfm3g2kd>Infrastructure that keeps your business connected.</h1><p data-astro-cid-qfm3g2kd>Professional Wi-Fi, structured cabling, CCTV, PBX and network security—from site assessment and design to installation and support across Kuwait and the UAE.</p><div class="showcase-actions" data-astro-cid-qfm3g2kd><a class="btn" href="/contact?service=Technology%20Solutions#quote" data-astro-cid-qfm3g2kd>Request a Site Survey</a><a class="btn showcase-secondary" href="/solutions" data-astro-cid-qfm3g2kd>Explore Solutions</a></div><div class="showcase-points" data-astro-cid-qfm3g2kd><span data-astro-cid-qfm3g2kd>Design &amp; supply</span><span data-astro-cid-qfm3g2kd>Professional installation</span><span data-astro-cid-qfm3g2kd>Ongoing support</span></div></div><div class="showcase-status" data-astro-cid-qfm3g2kd><span class="status-pulse" data-astro-cid-qfm3g2kd></span><small data-astro-cid-qfm3g2kd>COMPLETE PROJECT DELIVERY</small><strong data-astro-cid-qfm3g2kd>Survey → Design → Install → Support</strong></div></div></article><article class="hero-scene hero-scene-products" id="hero-scene-1" role="tabpanel" aria-roledescription="slide" aria-labelledby="hero-tab-1" aria-hidden="true" inert data-hero-scene data-astro-cid-qfm3g2kd><div class="hero-scene-media" aria-hidden="true" data-astro-cid-qfm3g2kd><img src="/images/hero/products-equipment.webp" srcset="/images/hero/products-equipment-960.webp 960w, /images/hero/products-equipment.webp 1536w" sizes="100vw" alt="" width="1536" height="1024" loading="lazy" fetchpriority="low" decoding="async" data-astro-cid-qfm3g2kd></div><div class="hero-scene-overlay" aria-hidden="true" data-astro-cid-qfm3g2kd></div><div class="container hero-scene-layout" data-astro-cid-qfm3g2kd><div class="hero-scene-copy" data-astro-cid-qfm3g2kd><span class="showcase-eyebrow" data-astro-cid-qfm3g2kd>NETWORKING • CCTV • VOICE • IT PRODUCTS</span><h2 data-astro-cid-qfm3g2kd>Technology products for complete project delivery.</h2><p data-astro-cid-qfm3g2kd>Source networking, fibre, CCTV, PBX and IT products—or combine supply with professional installation and configuration.</p><div class="showcase-actions" data-astro-cid-qfm3g2kd><a class="btn" href="/contact?service=Product%20Supply#quote" data-astro-cid-qfm3g2kd>Send Your Product List</a><a class="btn showcase-secondary" href="/products" data-astro-cid-qfm3g2kd>Explore Products</a></div><div class="showcase-points" data-astro-cid-qfm3g2kd><span data-astro-cid-qfm3g2kd>Multi-brand options</span><span data-astro-cid-qfm3g2kd>Project-based supply</span><span data-astro-cid-qfm3g2kd>Installation available</span></div></div><div class="showcase-status" data-astro-cid-qfm3g2kd><span class="status-pulse" data-astro-cid-qfm3g2kd></span><small data-astro-cid-qfm3g2kd>PROJECT SUPPLY WORKFLOW</small><strong data-astro-cid-qfm3g2kd>Products → Configuration → Delivery</strong></div></div></article><article class="hero-scene hero-scene-trading" id="hero-scene-2" role="tabpanel" aria-roledescription="slide" aria-labelledby="hero-tab-2" aria-hidden="true" inert data-hero-scene data-astro-cid-qfm3g2kd><div class="hero-scene-media" aria-hidden="true" data-astro-cid-qfm3g2kd><img src="/images/hero/trading-supply.webp" srcset="/images/hero/trading-supply-960.webp 960w, /images/hero/trading-supply.webp 1536w" sizes="100vw" alt="" width="1536" height="1024" loading="lazy" fetchpriority="low" decoding="async" data-astro-cid-qfm3g2kd></div><div class="hero-scene-overlay" aria-hidden="true" data-astro-cid-qfm3g2kd></div><div class="container hero-scene-layout" data-astro-cid-qfm3g2kd><div class="hero-scene-copy" data-astro-cid-qfm3g2kd><span class="showcase-eyebrow" data-astro-cid-qfm3g2kd>SOURCING • TRADING • REGIONAL SUPPLY</span><h2 data-astro-cid-qfm3g2kd>International sourcing shaped around your requirements.</h2><p data-astro-cid-qfm3g2kd>EFU supports commercial sourcing across construction materials, mechanical components, agricultural products and general supply requirements.</p><div class="showcase-actions" data-astro-cid-qfm3g2kd><a class="btn" href="/contact?service=Trading%20%26%20Supply#quote" data-astro-cid-qfm3g2kd>Send Your Requirement</a><a class="btn showcase-secondary" href="/trading-supply" data-astro-cid-qfm3g2kd>Explore Trading &amp; Supply</a></div><div class="showcase-points" data-astro-cid-qfm3g2kd><span data-astro-cid-qfm3g2kd>Requirement-based sourcing</span><span data-astro-cid-qfm3g2kd>Kuwait, UAE and India</span><span data-astro-cid-qfm3g2kd>Commercial supply support</span></div></div><div class="showcase-status" data-astro-cid-qfm3g2kd><span class="status-pulse" data-astro-cid-qfm3g2kd></span><small data-astro-cid-qfm3g2kd>COMMERCIAL SOURCING</small><strong data-astro-cid-qfm3g2kd>Requirement → Sourcing → Supply</strong></div></div></article></div><div class="container hero-showcase-controls" data-hero-controls data-astro-cid-qfm3g2kd><div class="hero-scene-tabs" role="tablist" aria-label="Choose a business area" data-astro-cid-qfm3g2kd><button class="hero-scene-tab" id="hero-tab-0" type="button" role="tab" aria-controls="hero-scene-0" aria-selected="true" aria-current="true" tabindex="0" data-hero-tab data-index="0" data-astro-cid-qfm3g2kd><span class="hero-tab-progress" aria-hidden="true" data-astro-cid-qfm3g2kd></span><span class="hero-tab-number" data-astro-cid-qfm3g2kd>01</span><span data-astro-cid-qfm3g2kd>Technology Solutions</span></button><button class="hero-scene-tab" id="hero-tab-1" type="button" role="tab" aria-controls="hero-scene-1" aria-selected="false" tabindex="-1" data-hero-tab data-index="1" data-astro-cid-qfm3g2kd><span class="hero-tab-progress" aria-hidden="true" data-astro-cid-qfm3g2kd></span><span class="hero-tab-number" data-astro-cid-qfm3g2kd>02</span><span data-astro-cid-qfm3g2kd>Products &amp; Equipment</span></button><button class="hero-scene-tab" id="hero-tab-2" type="button" role="tab" aria-controls="hero-scene-2" aria-selected="false" tabindex="-1" data-hero-tab data-index="2" data-astro-cid-qfm3g2kd><span class="hero-tab-progress" aria-hidden="true" data-astro-cid-qfm3g2kd></span><span class="hero-tab-number" data-astro-cid-qfm3g2kd>03</span><span data-astro-cid-qfm3g2kd>Trading &amp; Supply</span></button></div><div class="hero-transport" data-astro-cid-qfm3g2kd><button type="button" aria-label="Show previous hero scene" data-hero-previous data-astro-cid-qfm3g2kd><span aria-hidden="true" data-astro-cid-qfm3g2kd>←</span></button><button type="button" aria-label="Pause automatic hero rotation" aria-pressed="false" data-hero-pause data-astro-cid-qfm3g2kd><span aria-hidden="true" data-astro-cid-qfm3g2kd>Ⅱ</span></button><button type="button" aria-label="Show next hero scene" data-hero-next data-astro-cid-qfm3g2kd><span aria-hidden="true" data-astro-cid-qfm3g2kd>→</span></button></div></div><p class="sr-only" aria-live="polite" aria-atomic="true" data-hero-announcement data-astro-cid-qfm3g2kd></p></section><script type="module" src="/src/components/HeroShowcase.astro?astro&type=script&index=0&lang.ts"></script><section class="trust"><div class="container trust-grid"><span>Serving Kuwait, UAE & India</span><span>End-to-end project delivery</span><span>Multi-brand solutions</span><span>After-sales support</span></div></section><section class="section" id="solutions"><div class="container"><header class="section-head reveal"><div><span class="eyebrow">WHAT WE DO</span><h2>Technology solutions built around your site.</h2></div><p>Practical infrastructure for commercial and residential environments—from the first assessment to final handover.</p></header><div class="service-grid"><article class="service-card reveal" style="--delay:0ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.55a11 11 0 0 1 14.08 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"></path></svg></div><span class="card-no">01</span><h3>Business Wi-Fi</h3><p>Professionally planned routers, access points and wireless coverage for offices, villas and commercial facilities.</p><a href="/solutions/business-wifi">Explore solution <span>→</span></a></article><article class="service-card reveal" style="--delay:60ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v11m10-11v11M5 5h4m6 0h4M7 13a5 5 0 0 0 10 0M12 18v4"></path></svg></div><span class="card-no">02</span><h3>Structured Cabling</h3><p>Organised Cat6, Cat6A and fibre infrastructure with cabinets, patch panels, labelling and testing.</p><a href="/solutions/structured-cabling">Explore solution <span>→</span></a></article><article class="service-card reveal" style="--delay:120ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h4l2-2h6l2 2h4v12H3zM12 10a3 3 0 1 0 0 6 3 3 0 0 0 0-6"></path></svg></div><span class="card-no">03</span><h3>CCTV &amp; Surveillance</h3><p>Wired and IP surveillance solutions designed around site coverage, monitoring and security requirements.</p><a href="/solutions/cctv-surveillance">Explore solution <span>→</span></a></article><article class="service-card reveal" style="--delay:180ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1.1-.2c1.2.5 2.5.8 3.8.9a1 1 0 0 1 .9 1v3.4a1 1 0 0 1-1 1A17.2 17.2 0 0 1 2.7 3.8a1 1 0 0 1 1-1h3.4a1 1 0 0 1 1 .9c.1 1.3.4 2.6.9 3.8a1 1 0 0 1-.2 1.1z"></path></svg></div><span class="card-no">04</span><h3>VoIP &amp; PBX</h3><p>Business voice, IP phone and telephone exchange solutions for efficient internal and external communication.</p><a href="/solutions/voip-pbx">Explore solution <span>→</span></a></article><article class="service-card reveal" style="--delay:240ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zm-3-10 2 2 4-4"></path></svg></div><span class="card-no">05</span><h3>Network Security</h3><p>Firewall, VPN, segmentation and secure connectivity solutions based on operational requirements.</p><a href="/solutions/network-security">Explore solution <span>→</span></a></article><article class="service-card reveal" style="--delay:300ms"><div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 16 0v5a2 2 0 0 1-2 2h-2v-7h4M4 12v7h4v-7H4zm8 9h4"></path></svg></div><span class="card-no">06</span><h3>Installation &amp; Support</h3><p>On-site installation, configuration, troubleshooting, upgrades and continuing technical assistance.</p><a href="/solutions/installation-support">Explore solution <span>→</span></a></article></div></div></section><section class="section capabilities"><div class="container"><header class="section-head light reveal"><div><span class="eyebrow">FIELD CAPABILITIES</span><h2>Professional infrastructure. Installed with precision.</h2></div><p>Representative installation capabilities. Replace with verified EFU project photography as client assets become available.</p></header><div class="capability-gallery"><article class="cap-main reveal"><img src="/images/structured-cabling.webp" alt="Professionally organised structured cabling and network rack" loading="lazy" width="1200" height="900"><div><span>01 / STRUCTURED CABLING</span><h3>Organised, labelled and ready to scale.</h3><a href="/solutions/structured-cabling">View capability →</a></div></article><article class="cap-side reveal"><img src="/images/office-installation.webp" alt="Technician installing office Wi-Fi and CCTV infrastructure" loading="lazy" width="1200" height="900"><div><span>02 / SECURITY & WI-FI</span><h3>Coverage designed around the site.</h3><a href="/solutions/cctv-surveillance">View capability →</a></div></article></div></div></section><section class="section process"><div class="container"><header class="section-head light reveal"><div><span class="eyebrow">HOW WE WORK</span><h2>One partner from survey to support.</h2></div><p>A clear delivery process keeps technical work organised, accountable and aligned with your operational needs.</p></header><div class="steps process-line"><article class="reveal"><b>01</b><h3>Survey</h3><p>We review the site, coverage, infrastructure and operational requirements.</p></article><article class="reveal"><b>02</b><h3>Design</h3><p>We plan equipment, coverage, cable routes and a suitable technical solution.</p></article><article class="reveal"><b>03</b><h3>Supply &amp; install</h3><p>We coordinate products, installation, configuration, testing and handover.</p></article><article class="reveal"><b>04</b><h3>Support</h3><p>We assist with maintenance, troubleshooting, expansion and upgrades.</p></article></div></div></section><section class="section"><div class="container feature-stack"><article class="feature reveal"><div class="feature-art image-art"><img src="/images/office-installation.webp" alt="Professional office Wi-Fi and security installation" loading="lazy" width="1200" height="900"><span class="image-label">WI-FI • CCTV • SUPPORT</span></div><div><span class="eyebrow">BUSINESS WI-FI</span><h2>Stronger Wi-Fi without dead zones.</h2><p>Reliable Wi-Fi depends on layout, access-point placement, interference and capacity—not simply adding another router. EFU plans coverage around how the property is actually used.</p><a class="text-link" href="/solutions/business-wifi">Explore Business Wi-Fi →</a></div></article><article class="feature reverse reveal"><div class="feature-art image-art"><img src="/images/structured-cabling.webp" alt="Clean fibre and copper structured cabling installation" loading="lazy" width="1200" height="900"><span class="image-label">CAT6A • FIBRE • NETWORK RACKS</span></div><div><span class="eyebrow">STRUCTURED INFRASTRUCTURE</span><h2>Built cleanly. Ready to grow.</h2><p>Well-planned copper and fibre infrastructure improves reliability, simplifies maintenance and prepares your network for future expansion.</p><a class="text-link" href="/solutions/structured-cabling">Explore Structured Cabling →</a></div></article></div></section><section class="section products"><div class="container"><header class="section-head reveal"><div><span class="eyebrow">PRODUCT SUPPLY</span><h2>Technology products for complete project delivery.</h2></div><a class="btn btn-ghost" href="/contact#quote">Send your product list</a></header><div class="product-list"><a class="reveal" href="/products"><b>01</b><span>Network switches &amp; routers</span><i>→</i></a><a class="reveal" href="/products"><b>02</b><span>Wireless access points</span><i>→</i></a><a class="reveal" href="/products"><b>03</b><span>SFPs &amp; transceivers</span><i>→</i></a><a class="reveal" href="/products"><b>04</b><span>Fibre &amp; copper products</span><i>→</i></a><a class="reveal" href="/products"><b>05</b><span>Network cabinets &amp; racks</span><i>→</i></a><a class="reveal" href="/products"><b>06</b><span>CCTV cameras &amp; recorders</span><i>→</i></a><a class="reveal" href="/products"><b>07</b><span>PBX systems &amp; IP phones</span><i>→</i></a><a class="reveal" href="/products"><b>08</b><span>Testing tools</span><i>→</i></a><a class="reveal" href="/products"><b>09</b><span>Microwave &amp; satellite products</span><i>→</i></a><a class="reveal" href="/products"><b>10</b><span>IT &amp; office equipment</span><i>→</i></a></div></div></section><section class="section industries"><div class="container"><span class="eyebrow">ENVIRONMENTS WE SUPPORT</span><h2>Solutions for the way your site works.</h2><div class="industry-grid"><article class="reveal"><b>01</b><h3>Corporate offices</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>02</b><h3>Villas &amp; residences</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>03</b><h3>Retail &amp; hospitality</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>04</b><h3>Warehouses &amp; industry</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>05</b><h3>Education</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>06</b><h3>Healthcare</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article><article class="reveal"><b>07</b><h3>Construction &amp; contracting</h3><p>Planned infrastructure, installation and technical support aligned with the needs of this environment.</p></article></div></div></section><section class="section trading"><div class="container trading-grid"><div class="trade-mark reveal"><span>EFU</span><b>Global sourcing<br>Regional delivery</b></div><div class="reveal"><span class="eyebrow">BEYOND TECHNOLOGY</span><h2>International trading and supply.</h2><p>EFU also supports commercial sourcing and supply requirements across construction materials, mechanical components, agricultural products and general goods.</p><div class="trade-list"><span>Civil &amp; construction materials</span><span>Agricultural products</span><span>Coconut products</span><span>Spices, fruits &amp; vegetables</span><span>Mechanical equipment &amp; components</span><span>General sourcing &amp; supply</span></div><a class="btn" href="/trading-supply">Explore Trading & Supply</a></div></div></section><section class="section locations"><div class="container"><header class="section-head reveal"><div><span class="eyebrow">OUR LOCATIONS</span><h2>Regional reach. Local project support.</h2></div><p>Choose your market to view the most relevant solutions and contact information.</p></header><div class="location-grid"><a class="location-card reveal" href="/"><span>KW</span><h3>Kuwait</h3><p>Networking, security, communication and project supply</p><b>View location →</b></a><a class="location-card reveal" href="/locations/ae"><span>AE</span><h3>UAE</h3><p>Networking, security, communication and project supply</p><b>View location →</b></a><a class="location-card reveal" href="/locations/in"><span>IN</span><h3>India</h3><p>Trading, sourcing and technology products</p><b>View location →</b></a></div></div></section><section class="section faq"><div class="container faq-grid"><div class="reveal"><span class="eyebrow">QUESTIONS, ANSWERED</span><h2>What to know before your project starts.</h2><p>Need advice for a specific property or product requirement? Speak directly with the EFU team.</p><a class="text-link" href="/contact">Contact our team →</a></div><div><details class="reveal"><summary>Do you provide both equipment and installation?</summary><p>Yes. EFU can support product supply, installation, configuration and handover based on the requirements of each project.</p></details><details class="reveal"><summary>Can EFU conduct a site survey?</summary><p>Yes. Contact the local team to arrange a survey and confirm its scope, availability and any applicable charges.</p></details><details class="reveal"><summary>Do you support villas and commercial properties?</summary><p>EFU provides solutions for residences, offices, shops, warehouses and other commercial environments.</p></details><details class="reveal"><summary>Can you upgrade an existing network?</summary><p>Yes. The team can assess existing cabling, wireless coverage and active equipment before recommending an upgrade path.</p></details><details class="reveal"><summary>Do you install Cat6, Cat6A and fibre cabling?</summary><p>EFU supports structured copper and fibre cabling, subject to the site requirements and selected specification.</p></details><details class="reveal"><summary>How can I request a quotation?</summary><p>Choose your country, send the project details through the quotation form or contact the local EFU team through WhatsApp or phone.</p></details></div></div></section><section class="cta"><div class="container cta-inner reveal"><div><span class="eyebrow">START A CONVERSATION</span><h2>Planning a network, security or communication project?</h2><p>Share your site details or product requirements and receive a solution tailored to your operational needs.</p></div><div><a class="btn btn-white" href="/contact#quote">Request a Quote</a><a class="btn btn-outline-light" href="https://wa.me/96565071368" target="_blank" rel="noopener noreferrer">WhatsApp EFU</a></div></div></section></main><footer><div class="container footer-grid"><div><a href="/" class="brand brand-light"><img src="/efu-logo.jpg" alt="" width="58" height="58"><span>EFU <small>Goods Traders</small></span></a><p>Technology, infrastructure and international trading solutions across Kuwait, UAE and India.</p></div><div><h3>Solutions</h3><a href="/solutions/business-wifi">Business Wi-Fi</a><a href="/solutions/structured-cabling">Structured Cabling</a><a href="/solutions/cctv-surveillance">CCTV &amp; Surveillance</a><a href="/solutions/voip-pbx">VoIP &amp; PBX</a><a href="/solutions/network-security">Network Security</a></div><div><h3>Company</h3><a href="/about">About EFU</a><a href="/products">Products</a><a href="/trading-supply">Trading & Supply</a><a href="/contact">Contact</a></div><div><h3>Get in touch</h3><a href="tel:+96565071368">+965 6507 1368</a><a href="mailto:sales@efutraders.com">sales@efutraders.com</a><p>Kuwait</p></div></div><div class="container footer-bottom"><span>© 2026 EFU Goods Traders.</span><div><a href="/privacy">Privacy</a><a href="/sitemap-page">Sitemap</a></div></div></footer><a class="whatsapp" href="https://wa.me/96565071368?text=Hello%20EFU%2C%20I%20would%20like%20to%20discuss%20a%20technology%20project%20and%20request%20a%20quotation." target="_blank" rel="noreferrer" aria-label="Chat with EFU on WhatsApp">WA</a><script type="module" src="/src/layouts/BaseLayout.astro?astro&type=script&index=0&lang.ts"></script></body></html>

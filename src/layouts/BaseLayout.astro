@@ -1,26 +1,78 @@
 ---
 import '../styles/global.css';
 import { company, services, products, trading } from '../data/site';
-interface Props { title?: string; description?: string; country?: 'kw'|'ae'|'in'; }
-const { title='Technology, Infrastructure & Trading Solutions', description='EFU delivers networking, Wi-Fi, structured cabling, CCTV, PBX, IT infrastructure and international trading solutions across Kuwait, UAE and India.', country='kw' } = Astro.props;
+interface Props {
+  title?: string;
+  description?: string;
+  country?: 'kw'|'ae'|'in';
+  noindex?: boolean;
+  ogImage?: string;
+  hreflangGroup?: boolean;
+  structuredData?: Record<string, any>[];
+}
+const {
+  title='Technology & Trading Solutions',
+  description='EFU delivers networking, Wi-Fi, structured cabling, CCTV, PBX, IT infrastructure and international trading solutions across Kuwait, UAE and India.',
+  country='kw',
+  noindex=false,
+  ogImage='/images/og-cover.jpg',
+  hreflangGroup=false,
+  structuredData=[]
+} = Astro.props;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const contact = company.countries[country];
-const schema = { '@context':'https://schema.org','@type':'Organization', name:company.name, url:Astro.site?.toString(), email:company.email, telephone:contact.tel, areaServed:['Kuwait','United Arab Emirates','India'] };
+const ogLocale = { kw:'en_KW', ae:'en_AE', in:'en_IN' }[country];
+const hreflangPaths: [string, string][] = [['en-KW','/'],['en-AE','/locations/ae'],['en-IN','/locations/in'],['x-default','/']];
+const schema = {
+  '@context':'https://schema.org',
+  '@type':'Organization',
+  '@id': new URL('/#organization', Astro.site).toString(),
+  name: company.name,
+  url: Astro.site?.toString(),
+  logo: new URL('/efu-logo.jpg', Astro.site).toString(),
+  email: company.email,
+  telephone: contact.tel,
+  areaServed: ['Kuwait','United Arab Emirates','India'],
+  contactPoint: Object.entries(company.countries).map(([key,c])=>({
+    '@type':'ContactPoint',
+    telephone: c.tel,
+    contactType: 'sales',
+    areaServed: key.toUpperCase(),
+    availableLanguage: ['English']
+  }))
+};
 ---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content={description} />
+  {noindex && <meta name="robots" content="noindex,nofollow" />}
   <link rel="canonical" href={canonical} />
+  {hreflangGroup && hreflangPaths.map(([lang,path])=><link rel="alternate" hreflang={lang} href={new URL(path, Astro.site)} />)}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="icon" type="image/jpeg" href="/efu-logo.jpg" />
+  <link rel="apple-touch-icon" href="/efu-logo.jpg" />
+  <meta name="theme-color" content="#0b1f33" />
   <meta property="og:title" content={`${title} | ${company.name}`} />
   <meta property="og:description" content={description} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content={canonical} />
+  <meta property="og:site_name" content={company.name} />
+  <meta property="og:locale" content={ogLocale} />
+  <meta property="og:image" content={new URL(ogImage, Astro.site)} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={`${title} | ${company.name}`} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
   <title>{title} | {company.name}</title>
   <script is:inline type="application/ld+json" set:html={JSON.stringify(schema)} />
+  {structuredData.map(item => <script is:inline type="application/ld+json" set:html={JSON.stringify(item)} />)}
+  <slot name="head" />
 </head>
 <body data-country={country}>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -42,7 +94,6 @@ const schema = { '@context':'https://schema.org','@type':'Organization', name:co
   <main id="main"><slot /></main>
   <footer><div class="container footer-grid"><div><a href="/" class="brand brand-light"><img src="/efu-logo.jpg" alt="" width="58" height="58"/><span>EFU <small>Goods Traders</small></span></a><p>Technology, infrastructure and international trading solutions across Kuwait, UAE and India.</p></div><div><h3>Solutions</h3>{services.slice(0,5).map(s=><a href={`/solutions/${s.slug}`}>{s.title}</a>)}</div><div><h3>Company</h3><a href="/about">About EFU</a><a href="/products">Products</a><a href="/trading-supply">Trading & Supply</a><a href="/contact">Contact</a></div><div><h3>Get in touch</h3><a href={`tel:${contact.tel}`}>{contact.phone}</a><a href={`mailto:${company.email}`}>{company.email}</a><p>{contact.name}</p></div></div><div class="container footer-bottom"><span>© {new Date().getFullYear()} EFU Goods Traders.</span><div><a href="/privacy">Privacy</a><a href="/sitemap-page">Sitemap</a></div></div></footer>
   {contact.whatsapp && <a class="whatsapp" href={`https://wa.me/${contact.whatsapp}?text=${encodeURIComponent('Hello EFU, I would like to discuss a technology project and request a quotation.')}`} target="_blank" rel="noreferrer" aria-label="Chat with EFU on WhatsApp">WA</a>}
-  <div class="mobile-actions"><a href={`tel:${contact.tel}`}>Call</a>{contact.whatsapp && <a href={`https://wa.me/${contact.whatsapp}`} target="_blank">WhatsApp</a>}<a href="/contact#quote">Get Quote</a></div>
   <script>
     const toggle = document.querySelector<HTMLButtonElement>('.menu-toggle');
     const nav = document.querySelector<HTMLElement>('#main-nav');
